@@ -1,0 +1,27 @@
+.logo {
+  font-weight: bold;
+  color: var(--colors-negative);
+  background-color: var(--colors-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logoSmall {
+  width: 163px;
+  height: 68px;
+  font-size: 1rem;
+}
+
+.logoMedium {
+  width: 212px;
+  height: 90px;
+  font-size: 1.5rem;
+}
+
+.logoLarge {
+  width: 260px;
+  height: 120px;
+  font-size: 2rem;
+} 

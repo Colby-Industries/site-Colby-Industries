@@ -1,0 +1,6 @@
+.footer {
+  width: 100%;
+  background: var(--colors-secondary);
+  color: var(--colors-primary);
+  height: 390px;
+} 

@@ -1,0 +1,15 @@
+.navigationItem {
+  color: var(--colors-primary);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  padding: var(--spacing-2) var(--spacing-3);
+}
+
+.navigationItem:hover {
+  color: var(--colors-primary-xsoft);
+}
+
+.navigationItemActive {
+  color: var(--colors-primary-xsoft);
+}
