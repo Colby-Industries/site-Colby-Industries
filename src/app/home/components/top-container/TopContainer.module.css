@@ -1,7 +1,8 @@
 .topContainer {
   width: 100%;
   height: 400px;
-  background: url('../../../../assets/top-container-background.jpg') no-repeat center center fixed;
+  background: url("../../../../assets/top-container-background.jpg") no-repeat
+    center center fixed;
   background-size: cover;
 }
 

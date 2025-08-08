@@ -9,6 +9,8 @@
     left: 0;
     position: fixed;
     background-color: var(--colors-background);
+    z-index: 1000;
+    box-shadow: var(--elevation-1);
 
     .headerContent {
       display: flex;
@@ -19,10 +21,23 @@
       align-items: center;
       gap: var(--spacing-9);
       overflow-x: hidden;
+      padding: 0 var(--spacing-4);
     }
   }
 
   .headerContentWrapperOnScroll {
     box-shadow: var(--elevation-1);
   }
-} 
+
+  .logoLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

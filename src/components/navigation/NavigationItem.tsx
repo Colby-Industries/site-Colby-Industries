@@ -1,21 +1,27 @@
 import styles from './NavigationItem.module.css';
+import Link from 'next/link';
 
 interface NavigationItemProps {
   href?: string;
   children: React.ReactNode;
   isActive?: boolean;
+  onClick?: () => void;
 }
 
-export default function NavigationItem({ href, children, isActive = false }: NavigationItemProps) {
+export default function NavigationItem({ href, children, isActive = false, onClick }: NavigationItemProps) {
   const className = `${styles.navigationItem} ${isActive ? styles.navigationItemActive : ''}`;
 
   if (href) {
     return (
-      <a href={href} className={className}>
+      <Link href={href} className={className} onClick={onClick}>
         {children}
-      </a>
+      </Link>
     );
   }
 
-  return <div className={className}>{children}</div>;
+  return (
+    <div className={className} onClick={onClick}>
+      {children}
+    </div>
+  );
 }

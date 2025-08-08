@@ -6,6 +6,7 @@ import Navigation from '../navigation/Navigation';
 import { motion, mapValue, useMotionValueEvent, useScroll } from 'motion/react';
 import { useState } from 'react';
 import { clsx } from 'clsx';
+import Link from 'next/link';
 
 const FULL_HEADER_HEIGHT = 138;
 const REDUCED_HEADER_HEIGHT = 80;
@@ -30,7 +31,9 @@ export default function Header() {
           className={styles.headerContent}
           animate={{ height: headerHeight.get(), transition: { duration: 0 } }}
         >
-          <Logo size="medium" />
+          <Link href="/" className={styles.logoLink}>
+            <Logo size="medium" />
+          </Link>
           <Navigation />
         </motion.div>
       </div>

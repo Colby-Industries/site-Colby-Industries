@@ -1,9 +1,13 @@
 .navigationItem {
   color: var(--colors-primary);
   font-weight: 600;
+  font-size: 1.1rem;
   text-decoration: none;
   cursor: pointer;
   padding: var(--spacing-2) var(--spacing-3);
+  transition: color 0.2s ease;
+  display: block;
+  border-radius: var(--radius-1);
 }
 
 .navigationItem:hover {
@@ -12,4 +16,23 @@
 
 .navigationItemActive {
   color: var(--colors-primary-xsoft);
+}
+
+@media (max-width: 992px) {
+  .navigationItem {
+    color: var(--colors-negative);
+    padding: var(--spacing-6) var(--spacing-8);
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .navigationItem:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .navigationItem:last-child {
+    border-bottom: none;
+  }
 }
