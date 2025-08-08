@@ -5,6 +5,7 @@ import Logo from '../logo/Logo';
 import Navigation from '../navigation/Navigation';
 import { motion, mapValue, useMotionValueEvent, useScroll } from 'motion/react';
 import { useState } from 'react';
+import { clsx } from 'clsx';
 
 const FULL_HEADER_HEIGHT = 138;
 const REDUCED_HEADER_HEIGHT = 80;
@@ -20,7 +21,10 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div
-        className={`${styles.headerContentWrapper} ${headerHeight.get() !== FULL_HEADER_HEIGHT ? styles.headerContentWrapperOnScroll : ''}`}
+        className={clsx(
+          styles.headerContentWrapper,
+          headerHeight.get() !== FULL_HEADER_HEIGHT && styles.headerContentWrapperOnScroll,
+        )}
       >
         <motion.div
           className={styles.headerContent}

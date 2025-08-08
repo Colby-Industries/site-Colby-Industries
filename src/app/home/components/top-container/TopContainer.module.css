@@ -12,8 +12,9 @@
 }
 
 .topContainerContent {
+  text-transform: uppercase;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-9);
@@ -25,6 +26,7 @@
 
 .topContainerContent h1 {
   font-size: 2rem;
+  font-weight: 900;
 }
 
 .topContainerSubtitle {
@@ -33,7 +35,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .topContainerContent h1 {
-    font-size: 3rem;
+  .topContainerContent {
+    padding: var(--spacing-9) 100px;
+
+    h1 {
+      font-size: 3rem;
+    }
   }
-} 
+}

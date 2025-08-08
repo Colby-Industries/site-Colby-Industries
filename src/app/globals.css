@@ -3,7 +3,8 @@
   --colors-primary-soft: #3a608c;
   --colors-primary-xsoft: #6a9ab0;
   --colors-primary-xxsoft: #d3dfed;
-  --colors-secondary: #fff5e9;
+  --colors-secondary: #f5e8b3;
+  --colors-secondary-soft: #faf4d9;
 
   --colors-background: #ffffff;
   --colors-negative: #ffffff;
@@ -24,7 +25,7 @@
 
   --elevation-1: 1px 2px 6px rgba(0, 17, 50, 0.3);
 
-  --max-content-width: 1260px;
+  --max-content-width: 1400px;
 }
 
 body {

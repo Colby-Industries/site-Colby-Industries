@@ -5,10 +5,9 @@ export default function TopContainer() {
     <div className={styles.topContainer}>
       <div className={styles.topContainerBackground}>
         <div className={styles.topContainerContent}>
-          <h1>VOTRE PARTENAIRE EN PERFORMANCE ÉNERGÉTIQUE INDUSTRIELLE</h1>
+          <h1>Votre partenaire en performance énergétique industrielle</h1>
           <div className={styles.topContainerSubtitle}>
-            EFFICACITÉ ÉNERGÉTIQUE | PERFORMANCE INDUSTRIELLE | MESURES | AMÉLIORATION CONTINUE ISO 50001 | INDUSTRIES
-            4.0
+            Efficaté énergétique | Performance industrielle | Mesures | Amélioration continue ISO 50001 | Industries 4.0
           </div>
         </div>
       </div>

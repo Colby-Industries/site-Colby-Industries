@@ -1,0 +1,54 @@
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: var(--radius-2);
+  font-weight: 600;
+  transition: all 200s ease;
+  cursor: pointer;
+}
+
+.linkButtonPrimary {
+  background-color: var(--colors-primary);
+  color: var(--colors-secondary);
+  border: 2px solid var(--colors-primary);
+}
+
+.linkButtonPrimary:hover {
+  background-color: var(--colors-primary-soft);
+  border-color: var(--colors-primary-soft);
+}
+
+.linkButtonSecondary {
+  background-color: transparent;
+  color: var(--colors-primary);
+  border: 2px solid var(--colors-primary);
+}
+
+.linkButtonSecondary:hover {
+  background-color: var(--colors-primary);
+  color: var(--colors-secondary);
+}
+
+.linkButtonSmall {
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: 0.875rem;
+}
+
+.linkButtonMedium {
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: 1rem;
+}
+
+.linkButtonLarge {
+  padding: var(--spacing-3) var(--spacing-9);
+  font-size: 1.125rem;
+}
+
+.linkButtonExtraLarge {
+  padding: var(--spacing-3) var(--spacing-9);
+  width: 500px;
+  max-width: 100%;
+  font-size: 1.25rem;
+} 
