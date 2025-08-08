@@ -1,5 +1,11 @@
-import styles from './page.module.css'
+import styles from './page.module.css';
+import TopContainer from './components/top-container/TopContainer';
 
 export default function Home() {
-  return <div className={styles.homePage}>home</div>
+  return (
+    <section className={styles.homePage}>
+      <TopContainer />
+      home
+    </section>
+  );
 }

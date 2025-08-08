@@ -3,4 +3,9 @@
   background: var(--colors-secondary);
   color: var(--colors-primary);
   height: 390px;
-} 
+}
+
+.footerContent {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}

@@ -17,6 +17,7 @@
 .logoMedium {
   width: 212px;
   height: 90px;
+  max-height: 80px;
   font-size: 1.5rem;
 }
 

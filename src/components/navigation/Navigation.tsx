@@ -1,5 +1,5 @@
-import styles from './Navigation.module.css'
-import NavigationItem from './NavigationItem'
+import styles from './Navigation.module.css';
+import NavigationItem from './NavigationItem';
 
 export default function Navigation() {
   return (
@@ -9,5 +9,5 @@ export default function Navigation() {
       <NavigationItem>Notre approche</NavigationItem>
       <NavigationItem>Nous contacter</NavigationItem>
     </nav>
-  )
+  );
 }
