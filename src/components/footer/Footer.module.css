@@ -2,7 +2,7 @@
   width: 100%;
   background: var(--colors-secondary-soft);
   color: var(--colors-primary);
-  border-top: 4px solid var(--colors-primary);
+  border-top: 2px solid var(--colors-primary);
   height: 390px;
 }
 

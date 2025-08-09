@@ -41,9 +41,10 @@
   background-color: var(--colors-primary);
   z-index: 1001;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: var(--spacing-4);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobileMenu {
@@ -90,6 +91,92 @@
   flex-direction: row;
   gap: var(--spacing-4);
   align-items: center;
+}
+
+/* Desktop dropdown menus */
+.menu {
+  position: relative;
+}
+
+.menuTrigger {
+  color: var(--colors-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--radius-1);
+  display: inline-block;
+}
+
+.menuTrigger:hover {
+  color: var(--colors-primary-xsoft);
+}
+
+.dropdown {
+  display: none;
+  position: fixed;
+  min-width: 280px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius-2);
+  padding: var(--spacing-2) 0;
+  z-index: 1000;
+}
+
+.menu:hover .dropdown,
+.menu:focus-within .dropdown {
+  display: block;
+}
+
+.dropdownItem {
+  display: block;
+  padding: var(--spacing-2) var(--spacing-4);
+  color: var(--colors-primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdownItem:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Mobile submenus */
+.mobileParent {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileParentButton {
+  color: var(--colors-negative);
+  padding: var(--spacing-6) var(--spacing-8);
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-weight: 500;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+}
+
+.mobileSubmenu {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-1);
+  margin: 0 var(--spacing-6);
+}
+
+.caret {
+  transition: transform 0.2s ease;
+}
+
+.caretOpen {
+  transform: rotate(180deg);
 }
 
 @media (min-width: 992px) {

@@ -7,6 +7,7 @@ import { motion, mapValue, useMotionValueEvent, useScroll } from 'motion/react';
 import { useState } from 'react';
 import { clsx } from 'clsx';
 import Link from 'next/link';
+import { ROUTE_HOME } from '@/constants/routes';
 
 const FULL_HEADER_HEIGHT = 138;
 const REDUCED_HEADER_HEIGHT = 80;
@@ -31,7 +32,7 @@ export default function Header() {
           className={styles.headerContent}
           animate={{ height: headerHeight.get(), transition: { duration: 0 } }}
         >
-          <Link href="/" className={styles.logoLink}>
+          <Link href={ROUTE_HOME} className={styles.logoLink}>
             <Logo size="medium" />
           </Link>
           <Navigation />
