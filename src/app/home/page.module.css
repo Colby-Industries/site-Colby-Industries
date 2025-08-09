@@ -11,6 +11,31 @@
     flex-direction: column;
     align-items: center;
     padding: var(--spacing-9);
-    margin-bottom: calc(var(--spacing-9) * 2);
+    margin-bottom: calc(var(--spacing-9));
+  }
+
+  .prestations {
+    padding: var(--spacing-9);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+  
+  .prestationsList {
+    display: grid;
+    gap: var(--spacing-6);
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (min-width: 768px) {
+    .prestationsList {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 992px) {
+    .prestationsList {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 }
