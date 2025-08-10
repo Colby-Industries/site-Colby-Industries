@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.content h2 {
+  margin-bottom: var(--spacing-4);
+}
+
 .content {
   max-width: var(--max-content-width);
   margin: 0 auto;

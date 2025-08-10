@@ -8,7 +8,7 @@ import {
   ROUTE_PRESTATIONS_AMELIORATION_CONTINUE,
   ROUTE_PRESTATIONS_IDENTIFIER_PROJETS,
   ROUTE_PRESTATIONS_VERIFIER_PERFORMANCE,
-  ROUTE_PRESTATIONS_ANIMER_DEMARCHE,
+  ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE,
   ROUTE_PRESTATIONS_CONFORMITE,
 } from '@/constants/routes';
 
@@ -41,7 +41,11 @@ export default function Home() {
               title="Vérifier l'atteinte de la performance"
               href={ROUTE_PRESTATIONS_VERIFIER_PERFORMANCE}
             />
-            <PrestationCard index={4} title="Animer la démarche" href={ROUTE_PRESTATIONS_ANIMER_DEMARCHE} />
+            <PrestationCard
+              index={4}
+              title="Coordonner énergie, digital et performance"
+              href={ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE}
+            />
             <PrestationCard
               index={5}
               title="Accompagner vers la conformité réglementaire"

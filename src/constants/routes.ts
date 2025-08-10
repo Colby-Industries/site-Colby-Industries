@@ -14,7 +14,7 @@ export const ROUTE_PRESTATIONS_CARTOGRAPHIER = `${ROUTE_PRESTATIONS_BASE}/cartog
 export const ROUTE_PRESTATIONS_AMELIORATION_CONTINUE = `${ROUTE_PRESTATIONS_BASE}/developper-lamelioration-continue`;
 export const ROUTE_PRESTATIONS_IDENTIFIER_PROJETS = `${ROUTE_PRESTATIONS_BASE}/identifier-et-mettre-en-oeuvre-les-projets`;
 export const ROUTE_PRESTATIONS_VERIFIER_PERFORMANCE = `${ROUTE_PRESTATIONS_BASE}/verifier-latteinte-de-la-performance`;
-export const ROUTE_PRESTATIONS_ANIMER_DEMARCHE = `${ROUTE_PRESTATIONS_BASE}/animer-la-demarche`;
+export const ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE = `${ROUTE_PRESTATIONS_BASE}/coordonner-energie-digital-performance`;
 export const ROUTE_PRESTATIONS_CONFORMITE = `${ROUTE_PRESTATIONS_BASE}/accompagner-vers-la-conformite-reglementaire`;
 
 // Notre approche

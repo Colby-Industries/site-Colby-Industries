@@ -10,7 +10,7 @@ import {
   ROUTE_PRESTATIONS_AMELIORATION_CONTINUE,
   ROUTE_PRESTATIONS_IDENTIFIER_PROJETS,
   ROUTE_PRESTATIONS_VERIFIER_PERFORMANCE,
-  ROUTE_PRESTATIONS_ANIMER_DEMARCHE,
+  ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE,
   ROUTE_PRESTATIONS_CONFORMITE,
   ROUTE_APPROCHE_EXPERTISE_DATA,
   ROUTE_APPROCHE_MANAGEMENT_DONNEE,
@@ -73,8 +73,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className={styles.link} href={ROUTE_PRESTATIONS_ANIMER_DEMARCHE}>
-                  Animer la démarche
+                <Link className={styles.link} href={ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE}>
+                  Coordonner énergie, digital et performance
                 </Link>
               </li>
               <li>

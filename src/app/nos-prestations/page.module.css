@@ -1,0 +1,9 @@
+.page {
+  padding: var(--spacing-9) var(--spacing-9);
+  margin: auto;
+  max-width: var(--max-content-width);
+}
+
+.content {
+  padding: var(--spacing-9);
+}

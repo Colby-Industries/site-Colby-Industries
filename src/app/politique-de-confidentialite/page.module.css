@@ -12,8 +12,20 @@
   padding: var(--spacing-9) var(--spacing-6);
 }
 
-.content ul {
-  padding-left: var(--spacing-6);
-  list-style-type: '- ';
+.content h2 {
+  margin-bottom: var(--spacing-3);
+}
+
+.content > ul {
+  list-style: none;
+
+  > li {
+    margin-bottom: var(--spacing-6);
+
+    ul {
+      padding-left: var(--spacing-6);
+      list-style-type: '- ';
+    }
+  }
 }
 
