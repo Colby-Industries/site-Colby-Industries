@@ -49,11 +49,12 @@ h6 {
   margin: 0;
 }
 
-/* Global top separator line under fixed header, visible on every page */
 main {
   position: relative;
+  min-height: calc(100vh - 138px - 320px);
 }
 
+/* Global top separator line under fixed header, visible on every page */
 main::before {
   content: "";
   position: absolute;
