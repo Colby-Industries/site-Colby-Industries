@@ -9,7 +9,7 @@
 .topContainerBackground {
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .topContainerContent {
@@ -22,7 +22,6 @@
   padding: var(--spacing-9);
   height: 100%;
   justify-content: space-between;
-  border-top: 4px solid var(--colors-primary);
 }
 
 .topContainerContent h1 {
