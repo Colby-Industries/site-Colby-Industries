@@ -1,8 +1,7 @@
 .topContainer {
   width: 100%;
   height: 400px;
-  background: url("../../../../assets/top-container-background.jpg") no-repeat
-    center center fixed;
+  background: url("../../../../assets/top-container-background.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -41,5 +40,11 @@
     h1 {
       font-size: 3rem;
     }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .topContainer {
+    background-attachment: fixed;
   }
 }

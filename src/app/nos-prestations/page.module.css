@@ -5,5 +5,11 @@
 }
 
 .content {
-  padding: var(--spacing-9);
+  padding: var(--spacing-9) 0;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    padding: var(--spacing-9);
+  }
 }

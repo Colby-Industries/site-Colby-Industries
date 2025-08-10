@@ -40,4 +40,12 @@
       opacity: 0.8;
     }
   }
+
+  @media screen and (max-width: 992px) {
+    height: 80px !important;
+
+    .headerContent {
+      height: 80px !important;
+    }
+  }
 }
