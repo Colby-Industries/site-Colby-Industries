@@ -9,7 +9,6 @@ import Link from 'next/link';
 import {
   ROUTE_CONTACT,
   ROUTE_ENTREPRISE_QUI_SOMMES_NOUS,
-  ROUTE_ENTREPRISE_CONVICTIONS,
   ROUTE_ENTREPRISE_POSITIONNEMENT,
   ROUTE_ENTREPRISE_QUALIFICATIONS,
   ROUTE_PRESTATIONS_CARTOGRAPHIER,
@@ -64,7 +63,6 @@ export default function Navigation() {
       label: "L'entreprise",
       children: [
         { label: 'Qui sommes-nous?', href: ROUTE_ENTREPRISE_QUI_SOMMES_NOUS },
-        { label: 'Nos convictions', href: ROUTE_ENTREPRISE_CONVICTIONS },
         { label: 'Notre positionnement', href: ROUTE_ENTREPRISE_POSITIONNEMENT },
         { label: 'Nos Qualifications', href: ROUTE_ENTREPRISE_QUALIFICATIONS },
       ],

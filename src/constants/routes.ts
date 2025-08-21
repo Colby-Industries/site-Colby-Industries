@@ -4,7 +4,6 @@ export const ROUTE_CONTACT = '/contact';
 // Entreprise
 export const ROUTE_ENTREPRISE_BASE = '/entreprise';
 export const ROUTE_ENTREPRISE_QUI_SOMMES_NOUS = `${ROUTE_ENTREPRISE_BASE}#qui-sommes-nous`;
-export const ROUTE_ENTREPRISE_CONVICTIONS = `${ROUTE_ENTREPRISE_BASE}#nos-convictions`;
 export const ROUTE_ENTREPRISE_POSITIONNEMENT = `${ROUTE_ENTREPRISE_BASE}#notre-positionnement`;
 export const ROUTE_ENTREPRISE_QUALIFICATIONS = `${ROUTE_ENTREPRISE_BASE}#nos-qualifications`;
 

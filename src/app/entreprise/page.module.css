@@ -1,24 +1,201 @@
 .page {
   margin: 0 auto;
-  max-width: 1024px;
-  padding: 24px 16px;
+  max-width: var(--max-content-width);
+  padding: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-7) * 2);
+
+  h2 {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-9);
+  }
+
+  .section {
+
+  }
+
+  .founders {
+    margin-top: var(--spacing-9);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-9));
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      .founderPicture {
+        order: 0;
+        margin: 0 auto var(--spacing-6);
+      }
+
+      .founderName {
+        order: 1;
+        margin-bottom: var(--spacing-3);
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-3);
+          color: inherit;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--colors-primary-soft);
+          }
+        }
+
+        h3, img {
+          display: inline-block;
+        }
+      }
+
+      .founderDescription {
+        order: 2;
+      }
+    }
+  }
+
+  .positioning {
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-6);
+
+      h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: var(--spacing-6);
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--spacing-3);
+
+        h4 {
+          font-size: 1.2rem;
+        }
+
+        img {
+          height: 200px;
+          width: auto;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .qualifications {
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-6);
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-5);
+        align-items: center;
+
+        h3 {
+          font-size: 1.3rem;
+          text-align: center;
+          width: 100%;
+          margin-bottom: var(--spacing-6);
+        }
+
+        > div {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-3);
+
+          img {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: var(--spacing-9);
+
+    .section {
+      > div {
+        margin-left: var(--spacing-9);
+      }
+    }
+
+    .founders {
+      flex-direction: row;
+      justify-content: space-between;
+
+      > div {
+        max-width: 400px;
+      }
+    }
+
+    .positioning {
+      > div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        div {
+          width: 50%;
+          padding: var(--spacing-6);
+
+          h4 {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .qualifications {
+      > div > div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: center;
+
+        &:last-child {
+          align-items: baseline;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        > div {
+          width: 50%;
+          padding: var(--spacing-6);
+        }
+      }
+    }
+  }
 }
 
-.title {
-  margin-bottom: 24px;
+@media screen and (min-width: 1200px) {
+  .founders {
+    background: url("../../assets/entreprise/carte.jpg") center center no-repeat;
+    background-size: 38%;
+
+    > div:first-child {
+      margin-top: 300px;
+    }
+  }
 }
 
 .section {
   scroll-margin-top: 96px;
-  padding: 24px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
-
-.section:first-of-type {
-  border-top: none;
-}
-
-.sectionTitle {
-  margin: 0 0 8px 0;
-}
-
