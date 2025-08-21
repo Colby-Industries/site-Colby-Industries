@@ -63,7 +63,7 @@ export default function Navigation() {
     {
       label: "L'entreprise",
       children: [
-        { label: 'Qui somme-nous?', href: ROUTE_ENTREPRISE_QUI_SOMMES_NOUS },
+        { label: 'Qui sommes-nous?', href: ROUTE_ENTREPRISE_QUI_SOMMES_NOUS },
         { label: 'Nos convictions', href: ROUTE_ENTREPRISE_CONVICTIONS },
         { label: 'Notre positionnement', href: ROUTE_ENTREPRISE_POSITIONNEMENT },
         { label: 'Nos Qualifications', href: ROUTE_ENTREPRISE_QUALIFICATIONS },

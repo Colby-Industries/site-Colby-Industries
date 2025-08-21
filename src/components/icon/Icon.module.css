@@ -1,0 +1,14 @@
+.iconWrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Prefer CSS variable, fallback to currentColor */
+  fill: var(--icon-color, currentColor);
+  stroke: var(--icon-color, currentColor);
+}
+

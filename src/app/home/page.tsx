@@ -11,6 +11,7 @@ import {
   ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE,
   ROUTE_PRESTATIONS_CONFORMITE,
 } from '@/constants/routes';
+import Icon from '@/components/icon/Icon';
 
 export default function Home() {
   return (
@@ -21,6 +22,48 @@ export default function Home() {
           <LinkButton href={ROUTE_CONTACT} size="extra-large">
             Demandez un échange
           </LinkButton>
+        </div>
+        <div className={styles.presentation}>
+          Colby Industries est un cabinet de conseil spécialisé en performance énergétique industrielle. Nous
+          accompagnons les industriels dans la structuration de leur démarche énergie, l&apos;exploitation des données
+          et le pilotage des gains. Notre approche est pragmatique, sur-mesure, et ancrée dans la réalité du terrain.
+        </div>
+        <div className={styles.values}>
+          <h2>Nos valeurs</h2>
+          <div>
+            <div>
+              <Icon type="position" size={28} color="var(--colors-primary-soft)" />
+            </div>
+            <label>Proximité</label>
+          </div>
+          <div>
+            <div>
+              <Icon type="person" size={42} color="var(--colors-primary-soft)" />
+            </div>
+            <label>Accessibilité</label>
+            <span>Accompagnement simple et fluide</span>
+          </div>
+          <div>
+            <div>
+              <Icon type="wheels" size={42} color="var(--colors-primary-soft)" />
+            </div>
+            <label>Expertise engagée</label>
+            <span>Au service de vos enjeux</span>
+          </div>
+          <div>
+            <div>
+              <Icon type="coins" size={42} color="var(--colors-primary-soft)" />
+            </div>
+            <label>Collaboration</label>
+            <span>gagnante - gagnante</span>
+          </div>
+          <div>
+            <div>
+              <Icon type="chart" size={42} color="var(--colors-primary-soft)" />
+            </div>
+            <label>Partenaire</label>
+            <span>En croissance... qui s&apos;investit</span>
+          </div>
         </div>
         <div className={styles.prestations}>
           <h2>Nos prestations</h2>

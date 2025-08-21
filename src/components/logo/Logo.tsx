@@ -1,6 +1,5 @@
 import styles from './Logo.module.css';
-import logoUrl from '@/assets/logo.svg';
-import Image from 'next/image';
+import LogoMark from '@/assets/logo.svg';
 interface LogoProps {
   size?: 'small' | 'medium' | 'large';
 }
@@ -15,7 +14,7 @@ export default function Logo({ size = 'medium' }: LogoProps) {
 
   return (
     <div className={`${styles.logo} ${sizeClass}`}>
-      <Image src={logoUrl} alt="Colby Industries logo" className={styles.logoImage} />
+      <LogoMark className={styles.logoImage} fill="var(--colors-primary)" />
     </div>
   );
 }

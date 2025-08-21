@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.158 80.507" fill="#001132">
+    <defs>
+        <path id="path-0" d="M 50.630364947793076 33.14844307846556 L 97.3401843730216 33.198858425929366" style="fill: none;"></path>
+        <path id="path-1" d="M 50.630364947793076 33.14844307846556 L 97.3401843730216 33.198858425929366" style="fill: none;"></path>
+    </defs>
+    <g transform="matrix(1.165797, 0, 0, 1.165797, -6.091289, -10.13778)">
+        <path d="M 33.102 27.391 L 40.601 34.627 L 38.183 37.018 L 33.138 32.088 L 27.964 36.932 L 23.01 32.088 L 17.762 36.896 L 12.771 32.051 L 7.708 36.903 L 5.395 34.804 L 12.857 27.482 L 17.909 32.198 L 23.193 27.501 L 28.037 32.272 L 33.102 27.391 Z"></path>
+        <path d="M 32.932 42.173 L 40.431 49.409 L 38.013 51.8 L 32.968 46.87 L 27.794 51.714 L 22.84 46.87 L 17.592 51.678 L 12.601 46.833 L 7.538 51.685 L 5.225 49.586 L 12.687 42.264 L 17.739 46.98 L 23.023 42.283 L 27.867 47.054 L 32.932 42.173 Z"></path>
+        <text style="font-family: Arial, sans-serif; font-size: 7px; font-style: italic; white-space: pre;" transform="matrix(1, 0, 0, 1, -5.15709, 2.094734)"><textPath href="#path-0">0-10V</textPath></text>
+        <text style="font-family: Arial, sans-serif; font-size: 7px; font-style: italic; white-space: pre;" transform="matrix(1, 0, 0, 1, -5.456679, 17.422132)"><textPath href="#path-1">4-20mA<tspan x="0" dy="1em">​</tspan></textPath></text>
+    </g>
+</svg>
