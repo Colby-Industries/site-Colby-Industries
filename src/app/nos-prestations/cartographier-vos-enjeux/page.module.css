@@ -1,0 +1,39 @@
+.permanent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.center {
+  text-align: center;
+}
+
+.temporary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+}
+
+.comptage {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .temporary {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-9);
+  }
+
+  .comptage {
+    height: auto;
+    max-width: 460px;
+  }
+}

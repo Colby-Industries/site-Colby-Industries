@@ -1,4 +1,4 @@
-import styles from '../page.module.css';
+import styles from '../common.module.css';
 import Claim from '@/components/claim/Claim';
 
 export default function VerifierLatteinteDeLaPerformance() {
