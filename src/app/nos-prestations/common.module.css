@@ -6,6 +6,15 @@
   h3 {
     margin-top: var(--spacing-6);
   }
+
+  ul {
+    padding-left: var(--spacing-4);
+    list-style-type: '- ';
+  }
+}
+
+.center {
+  text-align: center;
 }
 
 .content {
@@ -19,5 +28,43 @@
   .content {
     padding: var(--spacing-9);
     gap: calc(var(--spacing-6) * 2);
+  }
+}
+
+.blocWithImage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+}
+
+.image {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .blocWithImage {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-9);
+  }
+
+  .blocWithImageReverse {
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    height: auto;
+    max-width: 460px;
+  }
+
+  .imageVertical {
+    max-width: 280px;
   }
 }

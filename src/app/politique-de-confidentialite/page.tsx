@@ -31,7 +31,7 @@ export default function PolitiqueDeConfidentialite() {
               <li>Numéro de téléphone</li>
               <li>Société et fonction</li>
               <li>Toute information facultative que vous choisissez de nous transmettre</li>
-              <li>Données techniques (adresse IP, cookies, logs) pour la navigation et l’analyse statistique</li>
+              <li>Données techniques (adresse IP, cookies, logs) pour la navigation et l&apos;analyse statistique</li>
             </ul>
           </li>
 
@@ -40,8 +40,8 @@ export default function PolitiqueDeConfidentialite() {
             <ul>
               <li>Formulaire de contact / demandes → fondé sur votre consentement ou intérêt légitime</li>
               <li>
-                Devis, propositions commerciales, relation client → fondé sur l’exécution d’un contrat ou de mesures
-                précontractuelles
+                Devis, propositions commerciales, relation client → fondé sur l&apos;exécution d&apos;un contrat ou de
+                mesures précontractuelles
               </li>
               <li>Statistiques anonymes (via cookies analytiques) → fondé sur votre consentement</li>
               <li>
@@ -55,24 +55,26 @@ export default function PolitiqueDeConfidentialite() {
             <h2>4. Destinataires des données</h2>
             <p>Les données peuvent être partagées avec :</p>
             <ul>
-              <li>Nos collaborateurs ou sous-traitants internes, dans le cadre de l’exécution de nos prestations</li>
+              <li>
+                Nos collaborateurs ou sous-traitants internes, dans le cadre de l&apos;exécution de nos prestations
+              </li>
               <li>Prestataires techniques (hébergement, maintenance)</li>
               <li>Autorités compétentes si requis par la loi</li>
             </ul>
           </li>
 
           <li>
-            <h2>5. Transferts hors de l’Union européenne</h2>
+            <h2>5. Transferts hors de l&apos;Union européenne</h2>
             <p>
-              Aucun transfert de données personnelles hors de l’Union européenne n’est prévu. Si cela devait changer,
-              des garanties appropriées (clauses contractuelles types, etc.) seraient mises en place.
+              Aucun transfert de données personnelles hors de l&apos;Union européenne n&apos;est prévu. Si cela devait
+              changer, des garanties appropriées (clauses contractuelles types, etc.) seraient mises en place.
             </p>
           </li>
 
           <li>
             <h2>6. Durée de conservation</h2>
             <ul>
-              <li>Données issues du formulaire de contact : conservées jusqu’à 3 ans après le dernier contact</li>
+              <li>Données issues du formulaire de contact : conservées jusqu&apos;à 3 ans après le dernier contact</li>
               <li>Données de facturation : conservées 10 ans conformément aux obligations légales</li>
               <li>Cookies analytiques : conservés pour une durée maximale de 13 mois (ou selon votre consentement)</li>
             </ul>
@@ -90,14 +92,14 @@ export default function PolitiqueDeConfidentialite() {
             <h2>8. Vos droits</h2>
             <p>Conformément au RGPD, vous disposez des droits suivants :</p>
             <ul>
-              <li>Droit d’accès</li>
+              <li>Droit d&apos;accès</li>
               <li>Droit de rectification</li>
-              <li>Droit à l’effacement (droit à l’oubli)</li>
+              <li>Droit à l&apos;effacement (droit à l&apos;oubli)</li>
               <li>Droit à la limitation du traitement</li>
-              <li>Droit d’opposition</li>
+              <li>Droit d&apos;opposition</li>
               <li>Droit à la portabilité des données</li>
               <li>
-                Droit d’introduire une réclamation auprès de la CNIL (
+                Droit d&apos;introduire une réclamation auprès de la CNIL (
                 <a href="https://www.cnil.fr" target="_blank" rel="noreferrer noopener">
                   www.cnil.fr
                 </a>
@@ -116,8 +118,8 @@ export default function PolitiqueDeConfidentialite() {
             <ul>
               <li>Cookies techniques nécessaires au fonctionnement du site</li>
               <li>
-                Cookies analytiques (par ex. Google Analytics) pour améliorer l’expérience utilisateur, soumis à votre
-                consentement via un bandeau visible dès la première visite
+                Cookies analytiques (par ex. Google Analytics) pour améliorer l&apos;expérience utilisateur, soumis à
+                votre consentement via un bandeau visible dès la première visite
               </li>
             </ul>
             <p>Une politique spécifique aux cookies est accessible (lien à prévoir).</p>

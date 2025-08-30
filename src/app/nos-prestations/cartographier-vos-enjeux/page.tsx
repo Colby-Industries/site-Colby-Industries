@@ -35,15 +35,15 @@ export default function CartographierVosEnjeux() {
           <div className={styles.permanent}>
             <p>
               Dans le cadre où l&apos;industriel souhaite maitriser sur le long terme la cartographie énergétique de son
-              site, un système de comptage fixe devra être déployé sur l’usine. Ce déploiement ne se fait en général pas
-              sans contrainte d’exploitation : consignation BT des transformateurs, purges des réseaux fluides (vapeur,
-              eau froide, eau glacée), inertage des tuyauteries gaz… La pose de comptage doit être structurée et
-              planifiée !
+              site, un système de comptage fixe devra être déployé sur l&apos;usine. Ce déploiement ne se fait en
+              général pas sans contrainte d&apos;exploitation : consignation BT des transformateurs, purges des réseaux
+              fluides (vapeur, eau froide, eau glacée), inertage des tuyauteries gaz… La pose de comptage doit être
+              structurée et planifiée !
             </p>
             <p>
-              Le cout d’une telle installation est également loin d’être neutre, en cas d&apos;incertitude il est
-              recommandé de réaliser en amont une cartographie à l’aide d’un comptage mobile non intrusif afin d’éviter
-              la pose de compteurs ne mesurant que quelques kWh.
+              Le cout d&apos;une telle installation est également loin d&apos;être neutre, en cas d&apos;incertitude il
+              est recommandé de réaliser en amont une cartographie à l&apos;aide d&apos;un comptage mobile non intrusif
+              afin d&apos;éviter la pose de compteurs ne mesurant que quelques kWh.
             </p>
             <p className={styles.center}>
               <strong>
@@ -146,7 +146,7 @@ export default function CartographierVosEnjeux() {
             <Image className={styles.comptage} src={comptage} width={460} height={340} alt="Comptage temporaire" />
             <div>
               <p>
-                Dans le cadre où un projet est déjà identifié et qu’il est nécessaire de mieux qualifier les enjeux
+                Dans le cadre où un projet est déjà identifié et qu&apos;il est nécessaire de mieux qualifier les enjeux
                 énergétiques de celui-ci nous sommes en mesure de proposer les solutions de monitoring temporaires
                 adaptées permettant de fiabiliser les données physiques des installations.
               </p>

@@ -7,7 +7,7 @@ export default function AccompagnerConformiteReglementaire() {
       <h1>Accompagner vers la conformité réglementaire</h1>
       <div className={styles.content}>
         <Claim
-          title="Des évolutions réglementaires qui s'orientent vers la réduction des émissions de CO2 et le passage à l’action"
+          title="Des évolutions réglementaires qui s'orientent vers la réduction des émissions de CO2 et le passage à l'action"
           description={
             <>
               <p>

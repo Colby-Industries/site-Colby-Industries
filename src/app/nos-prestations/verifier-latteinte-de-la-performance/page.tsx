@@ -1,5 +1,11 @@
 import styles from '../common.module.css';
 import Claim from '@/components/claim/Claim';
+import Collapse from '@/components/collapse/Collapse';
+import commonStyles from '@/app/nos-prestations/common.module.css';
+import Image from 'next/image';
+import commissioning from '@/assets/nos-prestations/commissioning.png';
+import analyseApprofondie from '@/assets/nos-prestations/analyse-approfondie.png';
+import { clsx } from 'clsx';
 
 export default function VerifierLatteinteDeLaPerformance() {
   return (
@@ -23,6 +29,81 @@ export default function VerifierLatteinteDeLaPerformance() {
             </>
           }
         />
+        <Collapse
+          title="Analyse approfondie des installations techniques"
+          subtitle="Valider l'impact énergétique, carbone et financier de vos projets"
+          defaultOpen={false}
+        >
+          <div className={commonStyles.blocWithImage}>
+            <Image
+              className={commonStyles.image}
+              src={commissioning}
+              width={460}
+              height={340}
+              alt="Analyse approfondie des installations techniques"
+            />
+            <div>
+              <p>
+                Le <strong>protocole IPMVP (International Performance Measurement and Verification Protocol</strong> –
+                Evo World) est aujourd&apos;hui la référence pour mesurer et vérifier les économies d&apos;énergie
+                réalisées après un projet d&apos;efficacité énergétique. Dans l&apos;industrie, son application permet
+                de comparer objectivement la situation réelle post-travaux à une situation de référence, en neutralisant
+                les effets de contexte (production, météo…). Cette rigueur méthodologique est essentielle pour garantir
+                la crédibilité des gains affichés, qu&apos;ils soient énergétiques, carbone ou financiers.
+              </p>
+              <p>
+                Dans le cadre des <strong>CEE spécifiques</strong> ou des subventions{' '}
+                <strong>Fonds Chaleur de l&apos;ADEME</strong>, l&apos;IPMVP est souvent exigé pour{' '}
+                <strong>justifier les économies auprès du PNCEE et de l&apos;Etat post période de mesurage</strong>.
+                Cette étape est cruciale car elle permet alors le déblocage du reste à payer des subventions
+                prévisionnelles. En amont, il est donc capital d&apos;anticiper ces éléments et d&apos;établir un plan
+                de mesurage abouti ainsi que des modèles mathématiques fiables pour éviter la non-obtention partielle ou
+                totale des aides demandées.
+              </p>
+              <p>
+                L&apos;intérêt dépasse le simple contrôle du retour sur investissement : c&apos;est un levier
+                stratégique pour piloter durablement les consommations, respecter les trajectoires bas carbones, et
+                valoriser les démarches environnementales dans les bilans RSE ou extra-financiers.
+              </p>
+            </div>
+          </div>
+        </Collapse>
+        <Collapse
+          title="Analyse approfondie des installations techniques"
+          subtitle="Identifier, comprendre puis améliorer vos utilités & process"
+          defaultOpen={false}
+        >
+          <div className={clsx(commonStyles.blocWithImage, commonStyles.blocWithImageReverse)}>
+            <Image
+              className={clsx(commonStyles.image, commonStyles.imageVertical)}
+              src={analyseApprofondie}
+              width={460}
+              height={340}
+              alt="Analyse approfondie des installations techniques"
+            />
+            <div>
+              <p>
+                Dans les installations industrielles complexes et énergivores, souvent vieillissantes, une régulation
+                gérée par un automate vétuste « boite noire » est l&apos;une des principales causes de surconsommation.
+                Vannes toujours ouvertes, boucles de régulation mal paramétrées, PID des automates non optimisés,
+                temporisations absentes ou mal configurées : autant de petits dysfonctionnements invisibles qui,
+                cumulés, entraînent des pertes significatives d&apos;énergie. Ces écarts passent généralement inaperçus
+                dans le quotidien de l&apos;exploitation, d&apos;où l&apos;intérêt d&apos;une analyse énergétique
+                approfondie couplée à une campagne de mesure.
+              </p>
+              <p>
+                En instrumentant les systèmes, notre objectif est de valider le mode de fonctionnement réel par rapport
+                au fonctionnement théorique ou attendu. L&apos;étude fine des régulations permet de cibler des actions à
+                fort retour sur investissement : reparamétrage des automates pilotant la cascade de production,
+                installation de vannes motorisées pilotées, optimisation des séquences de démarrage/arrêt, etc. Ces
+                ajustements, souvent peu coûteux, peuvent générer des économies importantes sans modifier l&apos;outil
+                de production. En résumé, la mesure ne sert pas qu&apos;à constater : elle révèle, corrige, et guide la
+                rénovation.
+              </p>
+              <p>Ces analyses font échos aux accompagnements que nous proposons sur les analyses fonctionnelles ici.</p>
+            </div>
+          </div>
+        </Collapse>
       </div>
     </section>
   );
