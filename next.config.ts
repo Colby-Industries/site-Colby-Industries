@@ -40,7 +40,7 @@ const nextConfig: NextConfig = {
                 plugins: [
                   {
                     name: 'removeAttrs',
-                    params: { attrs: '(fill|stroke|style)' },
+                    params: { attrs: '(stroke)' },
                   },
                 ],
               },
@@ -88,7 +88,7 @@ const nextConfig: NextConfig = {
                 plugins: [
                   {
                     name: 'removeAttrs',
-                    params: { attrs: '(fill|stroke|style)' },
+                    params: { attrs: '(stroke)' },
                   },
                 ],
               },
