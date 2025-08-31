@@ -25,6 +25,7 @@ import coins from '@/assets/icons/coins.svg';
 import person from '@/assets/icons/person.svg';
 import datacenter from '@/assets/icons/datacenter.svg';
 import square from '@/assets/icons/square.svg';
+import group from '@/assets/icons/group.svg';
 import { clsx } from 'clsx';
 
 const ICON_COMPONENTS = {
@@ -52,6 +53,7 @@ const ICON_COMPONENTS = {
   person,
   square,
   datacenter,
+  group,
 } as const;
 
 export type IconName = keyof typeof ICON_COMPONENTS;

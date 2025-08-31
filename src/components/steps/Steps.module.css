@@ -30,6 +30,19 @@
   }
 }
 
+.noItems {
+  > .title {
+    padding-right: 0;
+
+    > div {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 .step:not(:last-child)::after {
   content: ' ';
   height: 50px;

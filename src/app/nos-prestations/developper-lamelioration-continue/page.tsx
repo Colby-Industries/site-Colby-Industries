@@ -1,4 +1,3 @@
-import styles from './page.module.css';
 import commonStyles from '../common.module.css';
 import Claim from '@/components/claim/Claim';
 import { ISO50001 } from '@/components/ISO50001/ISO50001';
@@ -32,8 +31,8 @@ export default function DevelopperAmeliorationContinue() {
           defaultOpen={false}
           titleTag="h2"
         >
-          <div className={styles.collapseContent}>
-            <div className={styles.labelAndBloc}>
+          <div className={commonStyles.collapseContent}>
+            <div className={commonStyles.labelAndBloc}>
               <label>Après le mesurage, le pilotage</label>
               <p>
                 Nous construisons avec vous des <strong>indicateurs de performance énergétique</strong> sur mesure,
@@ -46,12 +45,14 @@ export default function DevelopperAmeliorationContinue() {
                 lisibilité pour les équipes opérationnelles comme pour les directions.
               </p>
             </div>
-            <div className={clsx(styles.labelAndBloc, styles.reverse)}>
-              <div className={styles.center}>
+            <div className={clsx(commonStyles.labelAndBloc, commonStyles.reverse)}>
+              <div className={commonStyles.center}>
                 <Icon type="target" size={120} />
               </div>
               <div>
-                <label className={styles.underline}>ÉTAPE 1 : Cadrage des objectifs, des usages et du périmètre</label>
+                <label className={commonStyles.underline}>
+                  ÉTAPE 1 : Cadrage des objectifs, des usages et du périmètre
+                </label>
                 <p>
                   Clarification du besoin: ISO 50001, pilotage énergie, audit réglementaire, plan de progrès,
                   valorisation CEE (IND-UT-134)
@@ -68,12 +69,12 @@ export default function DevelopperAmeliorationContinue() {
                 </p>
               </div>
             </div>
-            <div className={styles.labelAndBloc}>
-              <div className={styles.center}>
+            <div className={commonStyles.labelAndBloc}>
+              <div className={commonStyles.center}>
                 <Icon type="square" size={120} />
               </div>
               <div>
-                <label className={styles.underline}>
+                <label className={commonStyles.underline}>
                   ÉTAPE 2 : Création d’indicateurs pertinents et contextualisés
                 </label>
                 <div>
@@ -107,12 +108,12 @@ export default function DevelopperAmeliorationContinue() {
                 </div>
               </div>
             </div>
-            <div className={clsx(styles.labelAndBloc, styles.reverse)}>
-              <div className={styles.center}>
+            <div className={clsx(commonStyles.labelAndBloc, commonStyles.reverse)}>
+              <div className={commonStyles.center}>
                 <Icon type="wall" size={120} />
               </div>
               <div>
-                <label className={styles.underline}>ÉTAPE 3 : Mise en œuvre & plan d’actions</label>
+                <label className={commonStyles.underline}>ÉTAPE 3 : Mise en œuvre & plan d’actions</label>
                 <p>Élaboration d’une feuille de route opérationnelle :</p>
                 <ul>
                   <li>Structuration du suivi (outils simples ou intégrés)</li>
@@ -125,8 +126,8 @@ export default function DevelopperAmeliorationContinue() {
                 </p>
               </div>
             </div>
-            <div className={styles.labelAndBloc}>
-              <div className={styles.center}>
+            <div className={commonStyles.labelAndBloc}>
+              <div className={commonStyles.center}>
                 <Image src={ipe} alt="" width={400} />
               </div>
               <div>
@@ -137,12 +138,13 @@ export default function DevelopperAmeliorationContinue() {
                   Indépendance vis-à-vis des prestataires et outils.
                 </p>
                 <p>
+                  commonStyles{' '}
                   <strong>
                     Des IPE bien construits permettent de piloter la performance, justifier les actions et activer des
                     leviers financiers.
                   </strong>
                 </p>
-                <div className={clsx(styles.center, styles.icons)}>
+                <div className={clsx(commonStyles.center, commonStyles.icons)}>
                   <Icon type="data" size={120} />
                   <Icon type="dot-chart" size={120} />
                   <Icon type="bar-chart" size={120} />

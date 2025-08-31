@@ -18,6 +18,95 @@
   text-align: center;
 }
 
+.collapseContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.labelAndBloc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+
+  > *:first-child {
+    width: 100%;
+    max-width: 400px;
+    flex-shrink: 0;
+
+    img {
+      height: auto;
+      width: 300px;
+    }
+  }
+
+  > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .danger {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--colors-danger);
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons {
+    display: flex;
+    gap: var(--spacing-9);
+  }
+
+  .splitColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-6);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .labelAndBloc {
+    flex-direction: row;
+
+    .splitColumn {
+      flex-direction: row !important;
+      gap: var(--spacing-9) !important;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+
 .content {
   padding: var(--spacing-9) 0;
   display: flex;

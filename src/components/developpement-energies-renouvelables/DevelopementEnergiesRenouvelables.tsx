@@ -50,30 +50,28 @@ export const DevelopementEnergiesRenouvelables: React.FC = () => {
                 Respect des échéances réglementaires (obligations dès 2025 pour les sites existants)
               </p>
             </div>
-            <div className={styles.splitColumn}>
-              <div>
-                <label className={styles.underline}>
-                  Loi APER : Valoriser vos toitures, parkings et fonciers inexploités
-                </label>
-                <label>Qui est concerné ?</label>
-                <p>
-                  Sites industriels avec grandes toitures, parkings extérieurs ≥ 1 500 m², ou terrains disponibles
-                  <br />
-                  Acteurs implantés dans des zones d’accélération ENR définies par les collectivités
-                </p>
-                <label>Ce qui est demandé</label>
-                <p>
-                  Obligation de couverture solaire :
-                  <br />
-                  Toitures : obligation pour les bâtiments neufs ou rénovés à partir d’un certain seuil de surface
-                  <br />
-                  Parkings extérieurs ≥ 1 500 m² : obligation de couverture solaire à hauteur de 50 %
-                  <br />
-                  Incitation à développer des projets photovoltaïques ou thermiques en autoconsommation ou injection
-                  <br />
-                  Facilitation des procédures en zones d’accélération : gain de temps sur les autorisations
-                </p>
-              </div>
+            <div>
+              <label className={styles.underline}>
+                Loi APER : Valoriser vos toitures, parkings et fonciers inexploités
+              </label>
+              <label>Qui est concerné ?</label>
+              <p>
+                Sites industriels avec grandes toitures, parkings extérieurs ≥ 1 500 m², ou terrains disponibles
+                <br />
+                Acteurs implantés dans des zones d’accélération ENR définies par les collectivités
+              </p>
+              <label>Ce qui est demandé</label>
+              <p>
+                Obligation de couverture solaire :
+                <br />
+                Toitures : obligation pour les bâtiments neufs ou rénovés à partir d’un certain seuil de surface
+                <br />
+                Parkings extérieurs ≥ 1 500 m² : obligation de couverture solaire à hauteur de 50 %
+                <br />
+                Incitation à développer des projets photovoltaïques ou thermiques en autoconsommation ou injection
+                <br />
+                Facilitation des procédures en zones d’accélération : gain de temps sur les autorisations
+              </p>
             </div>
           </div>
         </div>
