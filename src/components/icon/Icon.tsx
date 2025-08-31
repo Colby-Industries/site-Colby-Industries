@@ -24,6 +24,7 @@ import wheels from '@/assets/icons/wheels.svg';
 import coins from '@/assets/icons/coins.svg';
 import person from '@/assets/icons/person.svg';
 import datacenter from '@/assets/icons/datacenter.svg';
+import square from '@/assets/icons/square.svg';
 import { clsx } from 'clsx';
 
 const ICON_COMPONENTS = {
@@ -49,6 +50,7 @@ const ICON_COMPONENTS = {
   wheels,
   coins,
   person,
+  square,
   datacenter,
 } as const;
 

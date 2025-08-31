@@ -2,6 +2,7 @@
   padding: var(--spacing-9) var(--spacing-9);
   margin: auto;
   max-width: var(--max-content-width);
+  overflow: hidden;
 
   h3 {
     margin-top: var(--spacing-6);

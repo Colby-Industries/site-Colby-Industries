@@ -32,6 +32,7 @@ export default function IdentifierMettreEnOeuvreLesProjets() {
           title="Etudes énergétiques"
           subtitle="De l'étude d'opportunité aux études d'avant projet"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={commonStyles.blocWithImage}>
             <Image className={commonStyles.image} src={etude} width={460} height={340} alt="Etudes énergétiques" />
@@ -68,6 +69,7 @@ export default function IdentifierMettreEnOeuvreLesProjets() {
           title="Analyses fonctionnelles"
           subtitle="Le pilotage des installations, premier levier de la performance énergétique"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={clsx(commonStyles.blocWithImage, commonStyles.blocWithImageReverse)}>
             <Image
@@ -98,6 +100,7 @@ export default function IdentifierMettreEnOeuvreLesProjets() {
           title="Assistance maitrise d'ouvrage performance énergétique"
           subtitle="Assurer la continuité du suivi entre les études et la réception des travaux"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={commonStyles.blocWithImage}>
             <Image

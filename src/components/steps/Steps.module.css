@@ -39,6 +39,10 @@
   background: url('/site-Colby-Industries/arrow.svg') center center no-repeat;
 }
 
+.compact {
+  font-size: 0.8rem;
+}
+
 @media screen and (min-width: 992px) {
   .steps {
     align-items: center;
@@ -82,5 +86,26 @@
     margin: var(--spacing-4);
     height: 40px;
     width: 40px;
+  }
+
+  .compact {
+    .step {
+      width: 100%;
+      max-width: 230px;
+
+      > .items, .title {
+        flex-shrink: initial;
+      }
+    }
+
+    .step:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .step:not(:last-child)::after {
+      margin: var(--spacing-2);
+      height: 30px;
+      width: 30px;
+    }
   }
 }

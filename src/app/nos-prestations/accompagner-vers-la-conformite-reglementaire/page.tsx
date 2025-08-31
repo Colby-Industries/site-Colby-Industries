@@ -1,11 +1,14 @@
-import styles from '../common.module.css';
+import commonStyles from '../common.module.css';
 import Claim from '@/components/claim/Claim';
+import Collapse from '@/components/collapse/Collapse';
+import { ISO50001 } from '@/components/ISO50001/ISO50001';
+import { DevelopementEnergiesRenouvelables } from '@/components/developpement-energies-renouvelables/DevelopementEnergiesRenouvelables';
 
 export default function AccompagnerConformiteReglementaire() {
   return (
-    <section className={styles.page}>
+    <section className={commonStyles.page}>
       <h1>Accompagner vers la conformité réglementaire</h1>
-      <div className={styles.content}>
+      <div className={commonStyles.content}>
         <Claim
           title="Des évolutions réglementaires qui s'orientent vers la réduction des émissions de CO2 et le passage à l'action"
           description={
@@ -22,6 +25,24 @@ export default function AccompagnerConformiteReglementaire() {
             </>
           }
         />
+        <Collapse
+          title="Audit énergétique"
+          subtitle="Réalisation d'audit réglementaire des procédés industriels NF EN 16247-1 et NF EN 16247-3"
+          titleTag="h2"
+          defaultOpen={false}
+        >
+          content
+        </Collapse>
+        <ISO50001 />
+        <Collapse
+          title="Décret tertiaire & Décret BACS"
+          subtitle="Support à la réponse aux décrets tertiaire et BACS"
+          titleTag="h2"
+          defaultOpen={false}
+        >
+          content
+        </Collapse>
+        <DevelopementEnergiesRenouvelables />
       </div>
     </section>
   );

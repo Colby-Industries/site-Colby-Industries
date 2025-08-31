@@ -15,9 +15,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
-      <head>
-        <meta name="apple-mobile-web-app-title" content="Colby-industries" />
-      </head>
       <body className={`${inter.className} antialiased`}>
         <Header />
         <main>{children}</main>

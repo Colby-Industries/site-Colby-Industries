@@ -33,6 +33,7 @@ export default function VerifierLatteinteDeLaPerformance() {
           title="Analyse approfondie des installations techniques"
           subtitle="Valider l'impact énergétique, carbone et financier de vos projets"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={commonStyles.blocWithImage}>
             <Image
@@ -72,6 +73,7 @@ export default function VerifierLatteinteDeLaPerformance() {
           title="Analyse approfondie des installations techniques"
           subtitle="Identifier, comprendre puis améliorer vos utilités & process"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={clsx(commonStyles.blocWithImage, commonStyles.blocWithImageReverse)}>
             <Image

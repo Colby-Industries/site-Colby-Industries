@@ -34,6 +34,7 @@ export default function CoordonnerEnergieDigitalPerformancePage() {
           title="Energy Manager"
           subtitle="Diagnostiquer, maitriser et améliorer la performance énergétique des usines"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={clsx(commonStyles.blocWithImage, commonStyles.blocWithImageReverse)}>
             <Image className={commonStyles.image} src={energyManager} width={460} height={340} alt="Energy Manager" />
@@ -75,6 +76,7 @@ export default function CoordonnerEnergieDigitalPerformancePage() {
           title="Product Owner"
           subtitle="Coordonner vos projets Industrie 4.0 attenant aux sujets de l'énergie et de la décarbonation"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={commonStyles.blocWithImage}>
             <Image className={commonStyles.image} src={productOwner} width={460} height={340} alt="Product Owner" />
@@ -104,6 +106,7 @@ export default function CoordonnerEnergieDigitalPerformancePage() {
           title="Animateur Performance Énergétique"
           subtitle="Former et sensibiliser les professionnels & scolaires aux enjeux de l’énergie dans l’industrie"
           defaultOpen={false}
+          titleTag="h2"
         >
           <div className={clsx(commonStyles.blocWithImage, commonStyles.blocWithImageReverse)}>
             <Image
