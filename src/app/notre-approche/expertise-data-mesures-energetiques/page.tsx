@@ -96,7 +96,7 @@ export default function ExpertiseDataMesuresEnergetiques() {
             />
             <Card
               title="Entrée TOR"
-              icon="signal"
+              icon="tor"
               text={<p>Suivi des changements d&apos;états, idéal pour créer les premiers KPI.</p>}
             />
           </div>
