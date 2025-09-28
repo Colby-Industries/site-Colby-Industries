@@ -187,11 +187,11 @@
 
 @media screen and (min-width: 1200px) {
   .founders {
-    background: url("../../assets/entreprise/carte.jpg") center center no-repeat;
-    background-size: 38%;
+    background: url("../../assets/entreprise/carte.png") center center no-repeat;
+    background-size: 60%;
 
     > div:first-child {
-      margin-top: 300px;
+      margin-top: 220px;
     }
   }
 }

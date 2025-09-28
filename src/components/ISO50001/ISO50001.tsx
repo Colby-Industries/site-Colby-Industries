@@ -17,12 +17,12 @@ export const ISO50001: React.FC = () => {
           <label>Objectif</label>
           <p>
             L&apos;objectif de l&apos;ISO 50001 est de guider les organismes dans une démarche structurée et continue
-            d&apos;amélioration de leur performance énergétique, afin de réduire leur consommation, leurs coûts et leurs
-            émissions de gaz à effet de serre.
+            d&apos;amélioration de leur performance énergétique, afin de réduire leurs consommations, leurs coûts et
+            leurs émissions de gaz à effet de serre.
           </p>
         </div>
         <div>
-          <label>Qu&apos;est-ce qu&apos;un audit énergétique ?</label>
+          <label>Qu&apos;est-ce qu&apos;un Système de Management de l’Énergie ?</label>
           <p>
             Un Système de Management de l&apos;Énergie (SMÉ) intègre la gestion active de l&apos;énergie dans les
             procédures et les systèmes opérationnels au quotidien. Cela permet aux organismes de mieux gérer leur
@@ -33,7 +33,7 @@ export const ISO50001: React.FC = () => {
           </p>
         </div>
         <div>
-          <label>Méthodologie en 3 phases</label>
+          <label>PLAN DO CHECK ACT</label>
           <Methodology />
         </div>
         <div>
@@ -47,7 +47,7 @@ export const ISO50001: React.FC = () => {
           </div>
         </div>
         <div className={styles.accompagnement}>
-          <label>Notre accompagnement</label>
+          <label>Quels avantages ?</label>
           <div>
             <div>
               <label>Réglementaire</label>
@@ -55,7 +55,7 @@ export const ISO50001: React.FC = () => {
             </div>
             <div>
               <label>Managérial</label>
-              <span>Structure efficacement de la démarche</span>
+              <span>Structure efficacement la démarche</span>
             </div>
             <div>
               <label>Vie d&apos;entreprise</label>
@@ -73,10 +73,7 @@ export const ISO50001: React.FC = () => {
         </div>
         <div>
           <label>Qui peut mettre en place un SMÉ ?</label>
-          <p>
-            Toutes les entreprises de toutes les tailles peuvent mettre en place un Système de Management de
-            l&apos;Énergie.
-          </p>
+          <p>Toutes les entreprises peuvent mettre en place un Système de Management de l&apos;Énergie.</p>
         </div>
         <div>
           <label>La réglementation évolue</label>

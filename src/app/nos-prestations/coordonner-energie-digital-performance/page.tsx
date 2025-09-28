@@ -47,25 +47,31 @@ export default function CoordonnerEnergieDigitalPerformancePage() {
               <p>
                 En fonction des profils et des ressources allouées, le management de l&apos;énergie peut être délaissé
                 pour diverses raisons : manque de temps, manque de compétences… Nous pouvons vous accompagner sur cette
-                thématique en allouant une ressource experte pour animer ces sujets et ainsi faire le lien entre chaque
-                entité de l&apos;usine: des équipes de production à la direction. Les missions pouvant être menées sont
-                variées et recoupent l&apos;ensemble de nos prestations en passant de la création du plan d&apos;action,
-                au suivi des travaux, à la création et à l&apos;animation des reportings interne…
+                thématique en <strong>allouant une ressource experte pour animer ces sujets</strong> et ainsi faire le
+                lien entre chaque entité de l&apos;usine: des équipes de production à la direction. Les missions pouvant
+                être menées sont variées et recoupent l&apos;ensemble de nos prestations en passant de la création du
+                plan d&apos;action, au suivi des travaux, à la création et à l&apos;animation des reportings internes…
               </p>
               <div>
                 Externaliser tout ou partie cette compétence c&apos;est s&apos;assurer :
                 <br />
                 <ul>
-                  <li>D&apos;une régularité des suivis de vos indicateurs avec les bons outils</li>
-                  <li>De l&apos;animation de votre politique d&apos;amélioration continue</li>
-                  <li>De maitriser les enjeux réglementaires énergétique de votre site</li>
                   <li>
-                    De profiter d&apos;une ressource bénéficiant d&apos;une expertise solide acquise auprès de
-                    différents industriels
+                    D&apos;une <strong>régularité des suivis</strong> de vos indicateurs avec les bons outils
                   </li>
                   <li>
-                    D&apos;allouer le bon niveau de ressources en phase avec vos enjeux, vos budgets et la taille de vos
-                    équipes.
+                    De l&apos;animation de votre politique <strong>d&apos;amélioration continue</strong>
+                  </li>
+                  <li>
+                    De maitriser les <strong>enjeux réglementaires</strong> énergétiques de votre site
+                  </li>
+                  <li>
+                    De profiter d&apos;une ressource bénéficiant d&apos;une <strong>expertise solide</strong> acquise
+                    auprès de différents industriels
+                  </li>
+                  <li>
+                    D&apos;allouer le bon niveau de <strong>ressources en phase</strong> avec vos{' '}
+                    <strong>enjeux</strong>, vos <strong>budgets</strong> et la taille de vos équipes.
                   </li>
                 </ul>
               </div>

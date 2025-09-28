@@ -64,9 +64,10 @@ export interface IconProps {
   color?: string;
   title?: string;
   className?: string;
+  rotation?: number;
 }
 
-export default function Icon({ type, size = 24, color, title, className }: IconProps) {
+export default function Icon({ type, size = 24, color, title, className, rotation }: IconProps) {
   const SvgIcon = ICON_COMPONENTS[type];
 
   return (
@@ -77,7 +78,14 @@ export default function Icon({ type, size = 24, color, title, className }: IconP
       aria-hidden={title ? undefined : true}
       title={title}
     >
-      <SvgIcon className={styles.icon} />
+      <SvgIcon
+        className={styles.icon}
+        style={
+          rotation !== undefined
+            ? { transform: `rotate(${rotation}deg)`, transformOrigin: 'center', transformBox: 'fill-box' }
+            : undefined
+        }
+      />
     </span>
   );
 }

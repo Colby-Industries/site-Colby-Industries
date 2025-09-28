@@ -1,19 +1,57 @@
 .card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: var(--spacing-8);
-  min-height: 140px;
+  height: 300px;
   border-radius: var(--radius-2);
   background: var(--colors-background);
-  color: var(--colors-primary);
   box-shadow: var(--elevation-1);
+  overflow: hidden;
+  position: relative;
+
+}
+
+.cardBackground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.cardBackground:hover, .title:hover ~ .cardBackground , .subtitle:hover ~ .cardBackground {
+  filter: blur(4px);
+  transform: scale(1.2);
 }
 
 .title {
-  font-size: 1.1rem;
-  transition: color 120ms ease-out, text-shadow 150ms ease-out;
+  padding: var(--spacing-6);
+  position: absolute;
+  z-index: 2;
+  font-size: 1.2rem;
+  color: var(--colors-negative);
+  text-shadow: 1px 1px 3px var(--colors-primary);
+  text-transform: uppercase;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.subtitle {
+  z-index: 2;
+  position: absolute;
+  color: var(--colors-negative);
+  text-shadow: 1px 1px 3px var(--colors-primary);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--spacing-6);
 }
 
 .link {

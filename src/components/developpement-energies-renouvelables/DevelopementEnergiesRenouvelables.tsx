@@ -35,7 +35,7 @@ export const DevelopementEnergiesRenouvelables: React.FC = () => {
                 <br />
                 Flottes d’entreprise incluant des véhicules légers
                 <br />
-                Bâtiments industriels neufs ou lourdement rénovés
+                Bâtiments industriels neufs ou lourdement rénovés.
               </p>
               <label>Ce qui est demandé</label>
               <p>
@@ -58,7 +58,7 @@ export const DevelopementEnergiesRenouvelables: React.FC = () => {
               <p>
                 Sites industriels avec grandes toitures, parkings extérieurs ≥ 1 500 m², ou terrains disponibles
                 <br />
-                Acteurs implantés dans des zones d’accélération ENR définies par les collectivités
+                Acteurs implantés dans des zones d’accélération ENR définies par les collectivités.
               </p>
               <label>Ce qui est demandé</label>
               <p>
@@ -105,7 +105,7 @@ export const DevelopementEnergiesRenouvelables: React.FC = () => {
         <div className={styles.labelAndBloc}>
           <label>Notre positionnement</label>
           <p>
-            Notre accompagnement se limite la définition de vos enjeux de conformité et aux études initiales. Pour la
+            Notre accompagnement se limite à la définition de vos enjeux de conformité et aux études initiales. Pour la
             réalisation des études détaillées ainsi que la mise en place des projets, nous faisons appel à notre réseau
             de partenaires experts sur ces thématiques spécifiques.
           </p>

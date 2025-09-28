@@ -90,7 +90,7 @@ export default function DevelopperAmeliorationContinue() {
                       <strong>Modèles multifactoriels</strong> : intégrant plusieurs variables explicatives
                     </li>
                     <li>
-                      <strong>Analyse d’efficacité énergétique</strong>réelle (rendement, déperditions, dérives)
+                      <strong>Analyse d’efficacité énergétique</strong> réelle (rendement, déperditions, dérives)
                     </li>
                   </ul>
                 </div>
@@ -132,24 +132,17 @@ export default function DevelopperAmeliorationContinue() {
               </div>
               <div>
                 <p>
-                  Approche compatible norme NF EN 17267 et fiche CEE IND-UT-134. Vision pragmatique et opérationnelle,
-                  adaptée aux réalités du terrain. Capacité à faire parler les données sans complexifier les outils.
+                  Vision pragmatique et opérationnelle, adaptée aux réalités du terrain. Capacité à faire parler les
+                  données sans complexifier les outils.
                   <br />
                   Indépendance vis-à-vis des prestataires et outils.
                 </p>
                 <p>
-                  commonStyles{' '}
                   <strong>
                     Des IPE bien construits permettent de piloter la performance, justifier les actions et activer des
                     leviers financiers.
                   </strong>
                 </p>
-                <div className={clsx(commonStyles.center, commonStyles.icons)}>
-                  <Icon type="data" size={120} />
-                  <Icon type="dot-chart" size={120} />
-                  <Icon type="bar-chart" size={120} />
-                  <Icon type="pie-chart" size={120} />
-                </div>
               </div>
             </div>
           </div>

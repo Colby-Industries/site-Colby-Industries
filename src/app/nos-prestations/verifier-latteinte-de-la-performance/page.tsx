@@ -22,15 +22,15 @@ export default function VerifierLatteinteDeLaPerformance() {
                 d&apos;exploitation des installations.
               </p>
               <p>
-                En compléement, l&apos;analyse énergétique approfondie des systèmes neufs ou existants permet la
-                compréhension des possibles divergences entre études et réalisation et ainsi de corriger les
-                défaillances identifiées.
+                En complément, l&apos;analyse énergétique approfondie des systèmes neufs ou existants permet la
+                compréhension des possibles divergences entre théorie et pratique et ainsi de corriger les défaillances
+                identifiées.
               </p>
             </>
           }
         />
         <Collapse
-          title="Analyse approfondie des installations techniques"
+          title="Commissioning énergie des installations & IPMVP"
           subtitle="Valider l'impact énergétique, carbone et financier de vos projets"
           defaultOpen={false}
           titleTag="h2"
@@ -88,19 +88,24 @@ export default function VerifierLatteinteDeLaPerformance() {
                 Dans les installations industrielles complexes et énergivores, souvent vieillissantes, une régulation
                 gérée par un automate vétuste « boite noire » est l&apos;une des principales causes de surconsommation.
                 Vannes toujours ouvertes, boucles de régulation mal paramétrées, PID des automates non optimisés,
-                temporisations absentes ou mal configurées : autant de petits dysfonctionnements invisibles qui,
-                cumulés, entraînent des pertes significatives d&apos;énergie. Ces écarts passent généralement inaperçus
-                dans le quotidien de l&apos;exploitation, d&apos;où l&apos;intérêt d&apos;une analyse énergétique
-                approfondie couplée à une campagne de mesure.
+                temporisations absentes ou mal configurées : autant de petits{' '}
+                <strong>dysfonctionnements invisibles</strong> qui, cumulés, entraînent des{' '}
+                <strong>pertes significatives</strong> d&apos;énergie. Ces écarts passent généralement inaperçus dans le
+                quotidien de l&apos;exploitation, d&apos;où l&apos;intérêt d&apos;une analyse énergétique approfondie
+                couplée à une campagne de mesure.
               </p>
               <p>
-                En instrumentant les systèmes, notre objectif est de valider le mode de fonctionnement réel par rapport
-                au fonctionnement théorique ou attendu. L&apos;étude fine des régulations permet de cibler des actions à
-                fort retour sur investissement : reparamétrage des automates pilotant la cascade de production,
-                installation de vannes motorisées pilotées, optimisation des séquences de démarrage/arrêt, etc. Ces
-                ajustements, souvent peu coûteux, peuvent générer des économies importantes sans modifier l&apos;outil
-                de production. En résumé, la mesure ne sert pas qu&apos;à constater : elle révèle, corrige, et guide la
-                rénovation.
+                En instrumentant les systèmes, notre objectif est de{' '}
+                <strong>valider le mode de fonctionnement réel par rapport au fonctionnement théorique</strong> ou
+                attendu. L&apos;étude fine des régulations permet de cibler des{' '}
+                <strong>actions à fort retour sur investissement</strong> : reparamétrage des automates pilotant la
+                cascade de production, installation de vannes motorisées pilotées, optimisation des séquences de
+                démarrage/arrêt, etc. Ces ajustements, souvent peu coûteux, peuvent générer des économies importantes
+                sans modifier l&apos;outil de production. En résumé,{' '}
+                <strong>
+                  la mesure ne sert pas qu&apos;à constater : elle révèle, corrige, et guide la rénovation
+                </strong>
+                .
               </p>
               <p>Ces analyses font échos aux accompagnements que nous proposons sur les analyses fonctionnelles ici.</p>
             </div>

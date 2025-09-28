@@ -20,11 +20,11 @@ export default function Entreprise() {
         <h2 className={styles.sectionTitle}>Qui sommes-nous ?</h2>
         <div>
           <p>
-            Colby Industries a été cofondée en avril 2025 par Corentin Colle et Clément Halby. Forts de plus de dix
-            années d&apos;expérience auprès de grands groupes énergéticiens, en France comme à l&apos;international,
-            nous avons choisi de mettre notre savoir-faire au service des industriels de nos territoires. Ingénieurs de
-            formation et convaincus que l&apos;efficacité énergétique est l&apos;un des leviers les plus puissants pour
-            relever les défis environnementaux, nous accompagnons nos clients dans la conception et la mise en œuvre de
+            Colby Industries a été cofondée en 2025 par Corentin Colle et Clément Halby. Forts de plus de dix années
+            d&apos;expérience auprès de grands groupes énergéticiens, en France comme à l&apos;international, nous avons
+            choisi de mettre notre savoir-faire au service des industriels de nos territoires. Ingénieurs de formation
+            et convaincus que l&apos;efficacité énergétique est l&apos;un des leviers les plus puissants pour relever
+            les défis environnementaux, nous accompagnons nos clients dans la conception et la mise en œuvre de
             solutions sur mesure, performantes et durables.
           </p>
           <div className={styles.founders}>
@@ -42,12 +42,14 @@ export default function Entreprise() {
 
               <Image src={corentin} alt="Corentin COLLE" className={styles.founderPicture} width={220} />
               <p className={styles.founderDescription}>
-                Profil technique orienté terrain, Corentin accompagne les industriels dans la mise en œuvre concrète de
-                projets d&apos;efficacité énergétique, avec une approche technique centrée sur la faisabilité, le
-                mesurage et la performance. Ingénieur diplômé de Polytech Montpellier, fort de plus de 10 ans
-                d&apos;expérience, notamment chez Engie en Suisse et GreenFlex à Lyon, avant de co-fonder Colby
-                Industries. Spécialiste des utilités industrielles, du suivi de performance et des systèmes de pilotage,
-                il est certifié CMVP.
+                Profil technique orienté terrain, Corentin accompagne les industries dans la mise en œuvre concrète de
+                projets d&apos;efficacité énergétique avec une approche pragmatique centrée sur la faisabilité, le
+                mesurage et la performance. Ingénieur diplômé de Polytech Montpellier en Énergétique et énergies
+                renouvelables en 2015, il a ensuite travaillé en Suisse et en région lyonnaise avant de revenir en
+                Auvergne et de co-fonder Colby Industries.
+                <br />
+                Spécialiste des utilités industrielles, du suivi de performance et des systèmes de pilotage il est
+                certifié CMVP en 2021.
               </p>
             </div>
             <div>
@@ -63,11 +65,14 @@ export default function Entreprise() {
               </div>
               <Image src={clement} alt="Clément HALBY" className={styles.founderPicture} width={220} />
               <p className={styles.founderDescription}>
-                Spécialiste de la performance énergétique, Clément met son expertise technique et stratégique au service
-                des industriels pour améliorer durablement leur performance énergétique. Il bénéficie de près de 10 ans
-                d&apos;expérience en France et à l&apos;international, il a accompagné de nombreux sites à forts enjeux,
-                de l&apos;audit à la mise en œuvre. Diplômé des Arts et Métiers et certifié ICA ISO 50001 / CMVP, il est
-                également co-fondateur de Colby Industries.
+                Spécialiste de l&apos;amélioration continue et de l&apos;efficacité énergétique, Clément met son
+                expertise technique et stratégique au service des industriels pour améliorer durablement leurs
+                consommations à travers le suivi d&apos;indicateurs de performance énergétique. Fort de ses expériences
+                en France et à l’international, il a accompagné de nombreux sites à enjeux, de l’audit à la mise en
+                œuvre en passant diverses études.
+                <br />
+                Diplômé des Arts et Métiers et certifié ICA ISO 50001 / CMVP, il est également co-fondateur de Colby
+                Industries.
               </p>
             </div>
           </div>

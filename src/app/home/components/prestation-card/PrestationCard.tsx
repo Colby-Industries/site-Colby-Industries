@@ -6,11 +6,13 @@ import Link from 'next/link';
 
 export type PrestationCardProps = {
   title: string;
+  subtitle: string;
   href?: string;
   index?: number;
+  background?: string;
 };
 
-export default function PrestationCard({ title, href = '#', index = 0 }: PrestationCardProps) {
+export default function PrestationCard({ title, subtitle, href = '#', index = 0, background }: PrestationCardProps) {
   return (
     <Link href={href} className={styles.link} aria-label={title}>
       <motion.article
@@ -18,9 +20,15 @@ export default function PrestationCard({ title, href = '#', index = 0 }: Prestat
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut', delay: index * 0.15 } }}
         viewport={{ once: true, amount: 0.3 }}
-        whileHover={{ scale: 1.02, transition: { duration: 0.12, ease: 'easeOut' } }}
       >
         <h3 className={styles.title}>{title}</h3>
+        <label className={styles.subtitle}>{subtitle}</label>
+        <div
+          className={styles.cardBackground}
+          style={{
+            backgroundImage: `url(${background})`,
+          }}
+        />
       </motion.article>
     </Link>
   );
