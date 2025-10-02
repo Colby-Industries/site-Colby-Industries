@@ -15,6 +15,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
+      <head>
+        <script defer data-domain="colby-industries.fr" src="https://plausible.io/js/script.js" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Header />
         <main>{children}</main>
