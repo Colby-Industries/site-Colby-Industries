@@ -34,7 +34,7 @@ const REFERENCES: ReferenceItem[] = [
     author: 'Pharmaceutique',
     company: 'Energy Manager',
     quote:
-      'Renfort externe sur plusieurs années à l’équipe énergie en place pour l’animation et le maintient du Système de Management ISO 50001 du site R&D. Présence durant les audits et les revues de management.',
+      'Renfort externe sur plusieurs années à l’équipe énergie en place pour l’animation et le maintien du Système de Management ISO 50001 du site R&D. Accompagnement durant les audits et les revues de management.',
   },
   {
     author: 'Plasturgie',
@@ -58,7 +58,7 @@ const REFERENCES: ReferenceItem[] = [
     author: 'Manufacture',
     company: 'Décret Tertiaire',
     quote:
-      'Accompagnement à la stratégie de réponse aux enjeux du décret tertiaire sur 18 usines en France. Récolte et répartition des consommations tertiaire et process pour intégration dans la plateforme OPERAT.',
+      'Accompagnement à la stratégie de réponse aux enjeux du décret tertiaire sur 18 usines en France. Récolte et répartition des consommations tertiaires et process pour intégration dans la plateforme OPERAT.',
   },
   {
     author: 'Automobile',
@@ -88,19 +88,19 @@ const REFERENCES: ReferenceItem[] = [
     author: 'Négociant vin',
     company: 'ISO 50001 & audit réglementaire',
     quote:
-      'Accompagnement à la mise en conformité par la mise en place de Systèmes de Management et d’audit énergétique réglementaire sur plusieurs usines d’embouteillage en France​',
+      'Accompagnement à la mise en conformité par la mise en place de Systèmes de Management et d’audit énergétique réglementaire sur plusieurs usines d’embouteillage en France.',
   },
   {
     author: 'Textile',
     company: 'Cartographie  & Récupération de chaleur',
     quote:
-      'Cartographier les usages afin d’identifier les enjeux énergétique et financier du process et étude récupération de chaleur sur incinérateur et four process',
+      'Cartographier les usages afin d’identifier les enjeux énergétiques et financiers du process et étude récupération de chaleur sur incinérateur et four process.',
   },
   {
     author: 'Pharmaceutique',
     company: 'Audit interne ISO 50001',
     quote:
-      'Principe de l’amélioration continue respecté pour ce site de R&D et production par la réalisation d’audit interne pluriannuelle',
+      'Principe de l’amélioration continue respecté pour ce site de R&D et production par la réalisation d’audit interne pluriannuel.',
   },
 ];
 

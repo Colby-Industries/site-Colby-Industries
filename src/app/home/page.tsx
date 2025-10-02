@@ -2,9 +2,8 @@ import styles from './page.module.css';
 import TopContainer from './components/top-container/TopContainer';
 import { References } from './components/references/References';
 import PrestationCard from './components/prestation-card/PrestationCard';
-import LinkButton from '@/components/link-button/LinkButton';
 import Icon from '@/components/icon/Icon';
-import { ROUTE_APPROCHE_EXPERTISE_DATA, ROUTE_APPROCHE_MANAGEMENT_DONNEE, ROUTE_CONTACT } from '@/constants/routes';
+import { ROUTE_APPROCHE_EXPERTISE_DATA, ROUTE_APPROCHE_MANAGEMENT_DONNEE } from '@/constants/routes';
 import {
   ROUTE_PRESTATIONS_CARTOGRAPHIER,
   ROUTE_PRESTATIONS_AMELIORATION_CONTINUE,
@@ -27,11 +26,6 @@ export default function Home() {
     <section className={styles.homePage}>
       <TopContainer />
       <div>
-        <div className={styles.contact}>
-          <LinkButton href={ROUTE_CONTACT} size="extra-large">
-            Demandez un échange
-          </LinkButton>
-        </div>
         <div className={clsx(styles.presentation, styles.content)}>
           <p>
             Colby Industries est un cabinet de conseil spécialisé en performance énergétique industrielle. Nous
@@ -40,7 +34,7 @@ export default function Home() {
           </p>
           <p>
             Notre approche, guidée par l&apos;exploitation de la donnée et ancrée dans l&apos;analyse terrain, nous
-            permet d&apos;être pragmatiques, sur-mesure et alignés avec les réalités industrielles.
+            permet d&apos;être pragmatiques, sur-mesures et alignés avec les réalités industrielles.
           </p>
         </div>
         <div className={styles.reverseBackground}>
@@ -70,9 +64,9 @@ export default function Home() {
               <div>
                 <Icon type="coins" size={42} color="var(--colors-primary-soft)" />
               </div>
-              <label>Collaboration</label>
+              <label>Équilibre</label>
               <span>
-                La mise à disposition d&apos;une ressource experte sans les coûts internes d&paos;une grosse structure.
+                La mise à disposition d&apos;une ressource experte sans les coûts internes d&apos;une grosse structure.
                 Une relation gagnante - gagnante !
               </span>
             </div>
@@ -90,7 +84,7 @@ export default function Home() {
               <div>
                 <Icon type="chart" size={42} color="var(--colors-primary-soft)" />
               </div>
-              <label>Partenaire</label>
+              <label>Partenariat</label>
               <span>
                 Chaque mission compte, la satisfaction client est notre préoccupation principale garantissant ainsi une
                 implication sans faille des équipes.
