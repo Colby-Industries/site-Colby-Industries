@@ -97,11 +97,16 @@
           font-size: 1.2rem;
         }
 
-        img, svg {
-          fill: var(--colors-negative);
+        img {
           height: 200px;
           width: auto;
           margin: 0 auto;
+        }
+
+        svg {
+          height: 130px;
+          width: auto;
+          margin: 35px auto;
         }
       }
     }

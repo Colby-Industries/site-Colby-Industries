@@ -103,7 +103,7 @@ export default function Entreprise() {
               </p>
             </div>
             <div>
-              <Handshake height={200} />
+              <Handshake height={120} />
               <h4>Des partenariats solides et des moyens techniques autonomes</h4>
               <p>
                 Nous collaborons avec des bureaux d&apos;études locaux et de grands groupe nationaux, en sous-traitance

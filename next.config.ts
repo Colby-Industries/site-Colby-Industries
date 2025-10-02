@@ -52,55 +52,6 @@ const nextConfig: NextConfig = {
       },
     },
   },
-
-  /**
-   * Webpack configuration so SVGR also works during `next build`.
-   */
-  webpack: (config) => {
-    const maybeSvgRule = (config.module.rules as any[]).find((rule) => {
-      try {
-        return Boolean(rule.test && rule.test.test && rule.test.test('.svg'));
-      } catch {
-        return false;
-      }
-    });
-    if (maybeSvgRule) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (maybeSvgRule as any).exclude = [/\.svg$/i];
-    }
-
-    config.module.rules.push(
-      {
-        test: /\.svg$/i,
-        resourceQuery: /url/, // e.g. import icon from './icon.svg?url'
-        type: 'asset/resource',
-      },
-      {
-        test: /\.svg$/i,
-        issuer: /\.[jt]sx?$/,
-        resourceQuery: { not: [/url/] }, // without ?url, use SVGR
-        use: [
-          {
-            loader: '@svgr/webpack',
-            options: {
-              svgo: true,
-              svgoConfig: {
-                plugins: [
-                  {
-                    name: 'removeAttrs',
-                    params: { attrs: '(stroke)' },
-                  },
-                ],
-              },
-              titleProp: true,
-            },
-          },
-        ],
-      },
-    );
-
-    return config;
-  },
 };
 
 export default nextConfig;
