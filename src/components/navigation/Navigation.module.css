@@ -124,8 +124,7 @@
   z-index: 1000;
 }
 
-.menu:hover .dropdown,
-.menu:focus-within .dropdown {
+.menu:hover .dropdown {
   display: block;
 }
 
