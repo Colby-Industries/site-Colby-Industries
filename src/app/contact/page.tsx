@@ -1,4 +1,12 @@
 import styles from './page.module.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description:
+    "Contactez Colby Industries pour vos projets d'efficacité énergétique industrielle : agences Puy-de-Dôme et Seine-et-Marne.",
+  alternates: { canonical: '/contact' },
+};
 
 export default function Contact() {
   return (

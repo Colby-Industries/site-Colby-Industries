@@ -1,4 +1,12 @@
 import styles from './page.module.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Politique de confidentialité',
+  description:
+    'Politique de confidentialité de Colby Industries : données collectées, finalités, droits et mesures de sécurité.',
+  alternates: { canonical: '/politique-de-confidentialite' },
+};
 
 export default function PolitiqueDeConfidentialite() {
   return (

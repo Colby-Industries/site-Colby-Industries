@@ -1,4 +1,6 @@
 import commonStyles from '../common.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
 import Claim from '@/components/claim/Claim';
 import Collapse from '@/components/collapse/Collapse';
 import Image from 'next/image';
@@ -7,9 +9,28 @@ import analyse from '@/assets/nos-prestations/analyse.png';
 import assistance from '@/assets/nos-prestations/assistance.png';
 import { clsx } from 'clsx';
 
+export const metadata: Metadata = {
+  title: 'Identifier et mettre en œuvre les projets',
+  description:
+    "Études énergétiques, analyses fonctionnelles, assistance à maitrise d'ouvrage : du cadrage à la réception des travaux.",
+  alternates: { canonical: '/nos-prestations/identifier-et-mettre-en-oeuvre-les-projets' },
+};
+
 export default function IdentifierMettreEnOeuvreLesProjets() {
   return (
     <section className={commonStyles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: 'Identifier et mettre en œuvre les projets',
+              url: 'https://colby-industries.fr/nos-prestations/identifier-et-mettre-en-oeuvre-les-projets',
+            },
+          ]),
+        }}
+      />
       <h1>Identifier et mettre en oeuvre les projets</h1>
       <div className={commonStyles.content}>
         <Claim

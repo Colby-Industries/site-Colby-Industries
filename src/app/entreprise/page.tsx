@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import type { Metadata } from 'next';
 import corentin from '@/assets/entreprise/corentin.png';
 import clement from '@/assets/entreprise/clement.png';
 import inLogo from '@/assets/entreprise/in.png';
@@ -13,9 +14,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import clsx from 'clsx';
 
+export const metadata: Metadata = {
+  title: 'À propos — Qui sommes-nous ?',
+  description:
+    'Colby Industries : ingénieurs experts en performance énergétique industrielle, proximité territoriale et certifications.',
+  alternates: { canonical: '/entreprise' },
+};
+
 export default function Entreprise() {
   return (
     <main className={styles.page}>
+      <h1>À propos de Colby Industries</h1>
       <section id="qui-sommes-nous" className={clsx(styles.section, styles.content)}>
         <h2 className={styles.sectionTitle}>Qui sommes-nous ?</h2>
         <div>
@@ -26,7 +35,13 @@ export default function Entreprise() {
             et convaincus que l&apos;efficacité énergétique est l&apos;un des leviers les plus puissants pour relever
             les défis environnementaux, nous accompagnons nos clients dans la conception et la mise en œuvre de
             solutions sur mesure, performantes et durables.
-            <Image src={job} alt="Qui sommes nous ?" width={480} />
+            <Image
+              src={job}
+              alt="Équipe Colby Industries au travail"
+              width={480}
+              priority
+              sizes="(max-width: 768px) 90vw, 480px"
+            />
           </p>
           <div className={styles.founders}>
             <div>
@@ -86,7 +101,7 @@ export default function Entreprise() {
           <div>
             <h3>Colby Industries se met au service de votre performance énergétique industrielle.</h3>
             <div>
-              <Image src={target} alt="" height={200} />
+              <Image src={target} alt="Ciblage des besoins et objectifs énergétiques" height={200} />
               <h4>Une structure agile, experte et proche du terrain</h4>
               <p>
                 Notre taille est notre force : elle nous permet d&apos;intervenir avec réactivité, tout en vous
@@ -94,7 +109,7 @@ export default function Entreprise() {
               </p>
             </div>
             <div>
-              <Image src={coverage} alt="" height={200} />
+              <Image src={coverage} alt="Couverture géographique des interventions en France" height={200} />
               <h4>Une présence locale pour un ancrage territorial fort</h4>
               <p>
                 Nous accompagnons principalement les industriels des régions Auvergne-Rhône-Alpes, Centre-Val de Loire
@@ -133,7 +148,7 @@ export default function Entreprise() {
               Colby Industries est qualifié selon la norme NF EN 16247-1 et NF EN 16247-3 qui définit les exigences, la
               méthodologie et les bonnes pratiques pour réaliser des audits énergétiques des procédés industriels.
             </p>
-            <Image src={afaq} alt="" width={150} />
+            <Image src={afaq} alt="Certification AFNOR NF EN 16247" width={150} />
           </div>
           <div>
             <h4>CMVP</h4>

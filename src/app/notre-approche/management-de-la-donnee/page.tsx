@@ -1,13 +1,34 @@
 import styles from './page.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import monitoring from '@/assets/notre-approche/monitoring.png';
 import restitution from '@/assets/notre-approche/restitution.png';
 import ISO50001 from '@/assets/notre-approche/ISO50001.png';
 import { Steps } from '@/components/steps/Steps';
 
+export const metadata: Metadata = {
+  title: 'Management de la donnée',
+  description:
+    "Structuration du monitoring, restitution d'études et tableaux de bord ISO 50001 pour une performance énergétique pilotée.",
+  alternates: { canonical: '/notre-approche/management-de-la-donnee' },
+};
+
 export default function ManagementDeLaDonnee() {
   return (
     <div className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: 'Management de la donnée',
+              url: 'https://colby-industries.fr/notre-approche/management-de-la-donnee',
+            },
+          ]),
+        }}
+      />
       <h1>Management de la donnée</h1>
       <section>
         <h2>Définition de la stratégie de monitoring</h2>

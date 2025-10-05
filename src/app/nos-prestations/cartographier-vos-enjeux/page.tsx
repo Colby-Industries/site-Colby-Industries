@@ -1,4 +1,6 @@
 import styles from './page.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
 import commonStyles from '../common.module.css';
 import Claim from '@/components/claim/Claim';
 import Collapse from '@/components/collapse/Collapse';
@@ -6,9 +8,28 @@ import { Steps } from '@/components/steps/Steps';
 import Image from 'next/image';
 import comptage from '@/assets/nos-prestations/comptage.png';
 
+export const metadata: Metadata = {
+  title: 'Cartographier vos enjeux énergie et carbone',
+  description:
+    "Plan de comptage, monitoring temporaire et permanent, méthodologie NF EN 17267 et KPI pour cartographier vos flux d'énergie.",
+  alternates: { canonical: '/nos-prestations/cartographier-vos-enjeux' },
+};
+
 export default function CartographierVosEnjeux() {
   return (
     <section className={commonStyles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: 'Cartographier vos enjeux',
+              url: 'https://colby-industries.fr/nos-prestations/cartographier-vos-enjeux',
+            },
+          ]),
+        }}
+      />
       <h1>Cartographier vos enjeux énergie et carbone</h1>
       <div className={commonStyles.content}>
         <Claim

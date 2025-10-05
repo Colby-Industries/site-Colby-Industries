@@ -1,4 +1,6 @@
 import styles from '../common.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
 import Claim from '@/components/claim/Claim';
 import Collapse from '@/components/collapse/Collapse';
 import commonStyles from '@/app/nos-prestations/common.module.css';
@@ -8,9 +10,28 @@ import productOwner from '@/assets/nos-prestations/product-owner.png';
 import animateur from '@/assets/nos-prestations/animateur.png';
 import { clsx } from 'clsx';
 
+export const metadata: Metadata = {
+  title: 'Coordonner énergie, digital et performance',
+  description:
+    'Energy Manager, Product Owner, animation énergie : pilotage, digitalisation et mobilisation pour une performance durable.',
+  alternates: { canonical: '/nos-prestations/coordonner-energie-digital-performance' },
+};
+
 export default function CoordonnerEnergieDigitalPerformancePage() {
   return (
     <section className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: 'Coordonner énergie, digital et performance',
+              url: 'https://colby-industries.fr/nos-prestations/coordonner-energie-digital-performance',
+            },
+          ]),
+        }}
+      />
       <h1>Coordonner énergie, digital et performance</h1>
       <div className={styles.content}>
         <Claim

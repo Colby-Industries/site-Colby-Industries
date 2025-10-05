@@ -1,4 +1,11 @@
 import styles from './page.module.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Mentions légales',
+  description: 'Mentions légales de Colby Industries : coordonnées, statut juridique et hébergeur.',
+  alternates: { canonical: '/mentions-legales' },
+};
 
 export default function MentionsLegales() {
   return (

@@ -1,4 +1,7 @@
 import styles from '../common.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
+
 import Claim from '@/components/claim/Claim';
 import Collapse from '@/components/collapse/Collapse';
 import commonStyles from '@/app/nos-prestations/common.module.css';
@@ -7,9 +10,28 @@ import commissioning from '@/assets/nos-prestations/commissioning.png';
 import analyseApprofondie from '@/assets/nos-prestations/analyse-approfondie.png';
 import { clsx } from 'clsx';
 
+export const metadata: Metadata = {
+  title: "Vérifier l'atteinte de la performance énergétique",
+  description:
+    "Commissioning énergie, IPMVP et analyses approfondies : mesurer, vérifier et garantir l'impact des projets.",
+  alternates: { canonical: '/nos-prestations/verifier-latteinte-de-la-performance' },
+};
+
 export default function VerifierLatteinteDeLaPerformance() {
   return (
     <section className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: "Vérifier l'atteinte de la performance énergétique",
+              url: 'https://colby-industries.fr/nos-prestations/verifier-latteinte-de-la-performance',
+            },
+          ]),
+        }}
+      />
       <h1>Vérifier l&apos;atteinte de la performance énergétique</h1>
       <div className={styles.content}>
         <Claim

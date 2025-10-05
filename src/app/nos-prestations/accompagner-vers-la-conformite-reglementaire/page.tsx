@@ -1,4 +1,6 @@
 import commonStyles from '../common.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
 import Claim from '@/components/claim/Claim';
 import Collapse from '@/components/collapse/Collapse';
 import { ISO50001 } from '@/components/ISO50001/ISO50001';
@@ -8,9 +10,28 @@ import Icon from '@/components/icon/Icon';
 import Link from 'next/link';
 import { ROUTE_ENTREPRISE_QUALIFICATIONS } from '@/constants/routes';
 
+export const metadata: Metadata = {
+  title: 'Accompagner vers la conformité réglementaire',
+  description:
+    'Audit énergétique NF EN 16247, décret tertiaire & BACS, ISO 50001 : accompagnement réglementaire pour les industriels.',
+  alternates: { canonical: '/nos-prestations/accompagner-vers-la-conformite-reglementaire' },
+};
+
 export default function AccompagnerConformiteReglementaire() {
   return (
     <section className={commonStyles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: 'Accompagner vers la conformité réglementaire',
+              url: 'https://colby-industries.fr/nos-prestations/accompagner-vers-la-conformite-reglementaire',
+            },
+          ]),
+        }}
+      />
       <h1>Accompagner vers la conformité réglementaire</h1>
       <div className={commonStyles.content}>
         <Claim

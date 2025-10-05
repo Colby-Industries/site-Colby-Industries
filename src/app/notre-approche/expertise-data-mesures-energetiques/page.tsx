@@ -1,10 +1,31 @@
 import styles from './page.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
 import Icon from '@/components/icon/Icon';
 import { Card } from '@/components/card/Card';
+
+export const metadata: Metadata = {
+  title: 'Expertise data & mesures énergétiques',
+  description:
+    'Mesures énergétiques, contextualisation et indicateurs: expertise Colby Industries pour cartographier et piloter la performance.',
+  alternates: { canonical: '/notre-approche/expertise-data-mesures-energetiques' },
+};
 
 export default function ExpertiseDataMesuresEnergetiques() {
   return (
     <section className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: 'Expertise data & mesures énergétiques',
+              url: 'https://colby-industries.fr/notre-approche/expertise-data-mesures-energetiques',
+            },
+          ]),
+        }}
+      />
       <div className={styles.topContainer}>
         <h1>Expertise data & mesures énergétiques</h1>
         <div>

@@ -1,4 +1,6 @@
 import commonStyles from '../common.module.css';
+import { createBreadcrumbJsonLd } from '@/lib/structured-data';
+import type { Metadata } from 'next';
 import Claim from '@/components/claim/Claim';
 import { ISO50001 } from '@/components/ISO50001/ISO50001';
 import Collapse from '@/components/collapse/Collapse';
@@ -8,9 +10,28 @@ import ipe from '@/assets/nos-prestations/ipe.png';
 import Image from 'next/image';
 import { DevelopementEnergiesRenouvelables } from '@/components/developpement-energies-renouvelables/DevelopementEnergiesRenouvelables';
 
+export const metadata: Metadata = {
+  title: "Développer l'amélioration continue",
+  description:
+    'ISO 50001, indicateurs de performance énergétique (IPE) et pilotage opérationnel : amélioration continue orientée résultats.',
+  alternates: { canonical: '/nos-prestations/developper-lamelioration-continue' },
+};
+
 export default function DevelopperAmeliorationContinue() {
   return (
     <section className={commonStyles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: createBreadcrumbJsonLd([
+            { name: 'Accueil', url: 'https://colby-industries.fr/' },
+            {
+              name: "Développer l'amélioration continue",
+              url: 'https://colby-industries.fr/nos-prestations/developper-lamelioration-continue',
+            },
+          ]),
+        }}
+      />
       <h1>Développer l&apos;amélioration continue</h1>
       <div className={commonStyles.content}>
         <Claim
