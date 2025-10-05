@@ -1,4 +1,54 @@
 .page {
-  margin: 0 auto;
-}
+  padding: var(--spacing-9) var(--spacing-9);
+  margin: auto;
+  max-width: var(--max-content-width);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-9) * 2);
 
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--spacing-9);
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--spacing-6);
+
+      > img {
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    h2 {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    section {
+      flex-direction: row;
+      justify-content: space-between;
+
+      > div {
+        &:first-of-type {
+          width: 60%;
+        }
+
+        &:last-of-type {
+          width: calc(35% - var(--spacing-9));
+
+          > img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
