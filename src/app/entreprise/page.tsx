@@ -13,6 +13,7 @@ import job from '@/assets/entreprise/job.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import clsx from 'clsx';
+import { ROUTE_HOME } from '@/constants/routes';
 
 export const metadata: Metadata = {
   title: 'À propos — Qui sommes-nous ?',
@@ -54,6 +55,7 @@ export default function Entreprise() {
                   <h3>Corentin COLLE</h3>
                   <Image src={inLogo} alt="LinkedIn logo" width={20} />
                 </Link>
+                <span>Agence Puy de Dôme (63)</span>
               </div>
 
               <Image src={corentin} alt="Corentin COLLE" className={styles.founderPicture} width={220} />
@@ -78,6 +80,7 @@ export default function Entreprise() {
                   <h3>Clément HALBY</h3>
                   <Image src={inLogo} alt="LinkedIn logo" width={20} />
                 </Link>
+                <span>Agence Seine et Marne (77)</span>
               </div>
               <Image src={clement} alt="Clément HALBY" className={styles.founderPicture} width={220} />
               <p className={styles.founderDescription}>
@@ -113,15 +116,16 @@ export default function Entreprise() {
               <h4>Une présence locale pour un ancrage territorial fort</h4>
               <p>
                 Nous accompagnons principalement les industriels des régions Auvergne-Rhône-Alpes, Centre-Val de Loire
-                et Île-de-France, au plus près de nos agences. Cette proximité géographique favorise une meilleure :
-                tissu industriel, prestataires, partenaires publics, clubs d&apos;industriels...
+                et Île-de-France, au plus près de nos agences. Cette proximité géographique favorise une meilleure
+                connaissance des écosystèmes locaux : tissu industriel, prestataires, partenaires publics, clubs
+                d&apos;industriels...
               </p>
             </div>
             <div>
               <Handshake height={120} />
               <h4>Des partenariats solides et des moyens techniques autonomes</h4>
               <p>
-                Nous collaborons avec des bureaux d&apos;études locaux et de grands groupe nationaux, en sous-traitance
+                Nous collaborons avec des bureaux d&apos;études locaux et de grands groupes nationaux, en sous-traitance
                 partielle ou totale. Nous disposons également de notre propre matériel de mesurage, ce qui nous permet
                 de réaliser en toute autonomie les mesures nécessaires aux études d&apos;efficacité énergétique.
               </p>
@@ -147,13 +151,17 @@ export default function Entreprise() {
             <p>
               Colby Industries est qualifié selon la norme NF EN 16247-1 et NF EN 16247-3 qui définit les exigences, la
               méthodologie et les bonnes pratiques pour réaliser des audits énergétiques des procédés industriels.
+              <br />
+              <Link href={`${ROUTE_HOME}certification-afnor.pdf`} target="_blank">
+                Certificat disponible
+              </Link>
             </p>
             <Image src={afaq} alt="Certification AFNOR NF EN 16247" width={150} />
           </div>
           <div>
             <h4>CMVP</h4>
             <p>
-              Corentin et Clément sont tout les deux certifié CMVP® (Certification Professionnelle de Mesure et
+              Corentin et Clément sont tous les deux certifiés CMVP® (Certification Professionnelle de Mesure et
               Vérification®) par l&apos;AEE (The Association of Energy Engineers). Un professionnel certifié de la
               mesure et de la vérification® est une personne qui gère ou applique des méthodes internationalement
               reconnues pour quantifier l&apos;impact des activités de gestion de l&apos;énergie sur la consommation

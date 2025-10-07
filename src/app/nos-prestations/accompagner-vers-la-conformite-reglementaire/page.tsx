@@ -92,11 +92,13 @@ export default function AccompagnerConformiteReglementaire() {
               <label>L&apos;audit énergétique réglementaire</label>
               <div>
                 <p>
-                  L&apos;assujettissement à l&apos;audit énergétique réglementaire évolue.
-                  <br />
-                  L&apos;article L233-1 du code de l&apos;énergie prévoit, à compter du 01/10/2025, des évolutions
-                  concernant l&apos;assujettissement des entreprises aux audits énergétiques réglementaires et à la mise
-                  en place d&apos;un Système de Management de l&apos;Énergie.
+                  L&apos;article{' '}
+                  <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051538879" target="_blank">
+                    L233-1 du code de l&apos;énergie
+                  </Link>{' '}
+                  prévoit, à compter du 01/10/2025, des évolutions concernant l&apos;assujettissement des entreprises
+                  aux audits énergétiques réglementaires et à la mise en place d&apos;un Système de Management de
+                  l&apos;Énergie.
                 </p>
                 <label>Réglementation jusqu&apos;au 30 Septembre 2025 :</label>
                 <p>
@@ -125,14 +127,14 @@ export default function AccompagnerConformiteReglementaire() {
                 </p>
                 <p>
                   Si la consommation d&apos;énergie annuelle moyenne sur 3 ans est supérieure à{' '}
-                  <strong>2,75 GWh, l&apos;audit énergétique réglementaire</strong>
-                  est à réaliser avant le 11 octobre 2026.
+                  <strong>2,75 GWh, l&apos;audit énergétique réglementaire</strong> est à réaliser avant le 11 octobre
+                  2026.
                 </p>
                 <p>
                   Si la consommation d&apos;énergie annuelle moyenne sur 3 ans est supérieure à{' '}
                   <strong>
                     23,6 GWh, nouvelle obligation de mise en place d&apos;un système de management de l&apos;Énergie
-                  </strong>
+                  </strong>{' '}
                   avant le 11 octobre 2027.
                 </p>
                 <p>
@@ -191,15 +193,18 @@ export default function AccompagnerConformiteReglementaire() {
                     Ou valeur absolue
                   </p>
                   <p>
-                    Choix d&apos;une <strong>année de référence Déclaration annuelle obligatoire</strong> sur la
-                    plateforme OPERAT (ADEME).
+                    Choix d&apos;une <strong>année de référence Déclaration annuelle obligatoire</strong> sur la{' '}
+                    <Link href="https://operat.ademe.fr/public/home" target="_blank">
+                      plateforme OPERAT
+                    </Link>{' '}
+                    (ADEME).
                   </p>
                 </div>
                 <div>
                   <label className={commonStyles.underline}>Décret BACS : Automatiser pour mieux piloter</label>
                   <label>Qui est concerné ?</label>
                   <p>
-                    Bâtiments tertiaires équipés d’un système de chauffage, de climatisation ou de ventilation :
+                    Bâtiments tertiaires équipés d&apos;un système de chauffage, de climatisation ou de ventilation :
                     <br />
                     &gt; 290 kW → obligation au 1er janvier 2025
                     <br />
@@ -207,7 +212,7 @@ export default function AccompagnerConformiteReglementaire() {
                   </p>
                   <label>Ce qui est demandé</label>
                   <p>
-                    Installer un <strong>système d’automatisation et de contrôle du bâtiment (GTB)</strong>.
+                    Installer un <strong>système d&apos;automatisation et de contrôle du bâtiment (GTB)</strong>.
                     <br />
                     Le système doit :
                     <br />
@@ -254,6 +259,29 @@ export default function AccompagnerConformiteReglementaire() {
                     },
                   ]}
                 />
+              </div>
+            </div>
+            <div className={commonStyles.labelAndBloc}>
+              <label>Liens utiles</label>
+              <div>
+                <p>
+                  La plateforme OPERAT et notamment le{' '}
+                  <Link href="https://operat.ademe.fr/public/faq" target="_blank">
+                    module FAQ
+                  </Link>{' '}
+                  pour vous permette de comprendre et de vous approprier les enjeux.
+                </p>
+                <p>
+                  Le site du développement durable du gouvernement dispose d&apos;une{' '}
+                  <Link
+                    href="https://rt-re-batiment.developpement-durable.gouv.fr/sommaire-de-la-faq-decret-bacs-a1019.html"
+                    target="_blank"
+                  >
+                    FAQ
+                  </Link>{' '}
+                  sur le sujet du Décret BACS. Les précisions indiquées pourront vous aider à comprendre vos différents
+                  assujettissements.
+                </p>
               </div>
             </div>
           </div>

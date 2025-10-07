@@ -7,6 +7,8 @@ import Collapse from '@/components/collapse/Collapse';
 import { Steps } from '@/components/steps/Steps';
 import Image from 'next/image';
 import comptage from '@/assets/nos-prestations/comptage.png';
+import Link from 'next/link';
+import { ROUTE_APPROCHE_EXPERTISE_DATA } from '@/constants/routes';
 
 export const metadata: Metadata = {
   title: 'Cartographier vos enjeux énergie et carbone',
@@ -57,9 +59,9 @@ export default function CartographierVosEnjeux() {
             <Image className={styles.comptage} src={comptage} width={460} height={340} alt="Comptage temporaire" />
             <div>
               <p>
-                Dans le cadre où un projet est déjà identifié et qu&apos;il est nécessaire de mieux qualifier les enjeux
-                énergétiques de celui-ci nous sommes en mesure de proposer les solutions de monitoring temporaires
-                adaptées permettant de fiabiliser les données physiques des installations.
+                Dans le cas où un projet est déjà identifié et qu&apos;il est nécessaire de mieux qualifier ses enjeux
+                énergétiques de celui-ci nous sommes en mesure de vous proposer les solutions de monitoring temporaires
+                adaptées permettant de fiabiliser les données physiques de vos installations.
               </p>
               <p>
                 Etant propriétaires de notre matériel de mesure nous maitrisons leur installation, leur mode de
@@ -70,7 +72,7 @@ export default function CartographierVosEnjeux() {
               <p className={styles.center}>
                 <strong>
                   Nous avons fait du mesurage une de nos expertises majeures ! Plus de détails sur notre approche
-                  disponible ici.
+                  disponible <Link href={ROUTE_APPROCHE_EXPERTISE_DATA}>ici</Link>.
                 </strong>
               </p>
             </div>
@@ -84,11 +86,13 @@ export default function CartographierVosEnjeux() {
         >
           <div className={styles.permanent}>
             <p>
-              Dans le cadre où l&apos;industriel souhaite maitriser sur le long terme la cartographie énergétique de son
+              Dans le cas où l&apos;industriel souhaite maitriser sur le long terme la cartographie énergétique de son
               site, un système de comptage fixe devra être déployé sur l&apos;usine. Ce déploiement ne se fait en
               général pas sans contrainte d&apos;exploitation : consignation BT des transformateurs, purges des réseaux
-              fluides (vapeur, eau froide, eau glacée), inertage des tuyauteries gaz… La pose de comptage doit être
-              structurée et planifiée !
+              fluides (vapeur, eau surchauffée, eau froide, eau glacée, ...), inertage des tuyauteries gaz, coactivité
+              des travaux…
+              <br />
+              L&apos;instrumentation de vos installations doit être structurée et planifiée !
             </p>
             <p>
               Le cout d&apos;une telle installation est également loin d&apos;être neutre, en cas d&apos;incertitude il
@@ -110,11 +114,11 @@ export default function CartographierVosEnjeux() {
                   items: [
                     'Etude documentaire',
                     'Cartographie réelle',
-                    'Priorisation du déploiement',
+                    'Priorisation',
                     'Budgets',
                     'KPI',
                     'Aides disponibles',
-                    'Méthodologie NF-EN 17267',
+                    'NF-EN 17267',
                   ],
                 },
                 {
@@ -130,7 +134,7 @@ export default function CartographierVosEnjeux() {
                 {
                   title: 'Rédaction cahier des charges - Software',
                   items: [
-                    'Connextivités existantes',
+                    'Connectivités existantes',
                     'Données process',
                     'Eligibilité CEE',
                     'Interfaçage ERP existant',
@@ -140,18 +144,18 @@ export default function CartographierVosEnjeux() {
               ]}
             />
             <h3>Pendant les travaux</h3>
-            <p>Assurer la continuité de service entre l&apos; et la mise en oeuvre du projet de comptage.</p>
+            <p>Assurer la continuité de service entre l&apos;étude et la mise en oeuvre du projet de comptage.</p>
             <Steps
               steps={[
                 {
                   title: 'Consultation et co-sélection des entreprises',
-                  items: ['Panel de consultation', 'Visites de sites', 'DPGF', 'Confirmité cahier des charges'],
+                  items: ['Panel de consultation', 'Visites de sites', 'DPGF', 'Conformité cahier des charges'],
                 },
                 {
                   title: "Suivi des travaux dans le rôle d'AMO",
                   items: [
                     'Planning prévisionnel',
-                    'Réunion de chantier',
+                    'Réunions de chantier',
                     'Suivi des travaux',
                     'Sécurité',
                     'Limite de prestations des lots',

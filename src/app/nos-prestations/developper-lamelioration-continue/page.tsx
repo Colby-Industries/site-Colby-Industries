@@ -8,7 +8,7 @@ import Icon from '@/components/icon/Icon';
 import clsx from 'clsx';
 import ipe from '@/assets/nos-prestations/ipe.png';
 import Image from 'next/image';
-import { DevelopementEnergiesRenouvelables } from '@/components/developpement-energies-renouvelables/DevelopementEnergiesRenouvelables';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Développer l'amélioration continue",
@@ -66,7 +66,7 @@ export default function DevelopperAmeliorationContinue() {
                 lisibilité pour les équipes opérationnelles comme pour les directions.
               </p>
             </div>
-            <div className={clsx(commonStyles.labelAndBloc, commonStyles.reverse)}>
+            <div className={clsx(commonStyles.labelAndBloc)}>
               <div className={commonStyles.center}>
                 <Icon type="target" size={120} />
               </div>
@@ -76,7 +76,7 @@ export default function DevelopperAmeliorationContinue() {
                 </label>
                 <p>
                   Clarification du besoin: ISO 50001, pilotage énergie, audit réglementaire, plan de progrès,
-                  valorisation CEE (IND-UT-134)
+                  valorisation CEE.
                   <br />
                   Définition des périmètres (atelier, utilité, bâtiment, ligne, équipement)
                   <br />
@@ -84,8 +84,16 @@ export default function DevelopperAmeliorationContinue() {
                 </p>
                 <p>
                   <em>
-                    Nous nous appuyons sur la <strong>norme NF EN 17267</strong>, qui fournit une méthodologie
-                    structurée pour la création d’IPE dans le secteur industriel.
+                    Nous nous appuyons sur la{' '}
+                    <strong>
+                      <Link
+                        href="https://www.boutique.afnor.org/fr-fr/norme/nf-en-17267/plan-de-mesurage-et-de-surveillance-de-lenergie-conception-et-mise-en-oeuvr/fa191096/83788"
+                        target="_blank"
+                      >
+                        norme NF EN 17267
+                      </Link>
+                    </strong>
+                    , qui fournit une méthodologie structurée pour la création d&apos;IPE dans le secteur industriel.
                   </em>
                 </p>
               </div>
@@ -96,46 +104,52 @@ export default function DevelopperAmeliorationContinue() {
               </div>
               <div>
                 <label className={commonStyles.underline}>
-                  ÉTAPE 2 : Création d’indicateurs pertinents et contextualisés
+                  ÉTAPE 2 : Création d&apos;indicateurs pertinents et contextualisés
                 </label>
                 <div>
-                  <p>Élaboration d’IPE multi-niveaux :</p>
+                  <p>Élaboration d&apos;IPE multi-niveaux :</p>
                   <ul>
                     <li>
                       <strong>Ratios de base</strong> : énergie par unité produite, par m², par cycle
                     </li>
                     <li>
-                      <strong>Indicateurs fonctionnels</strong> : consommation à vide, en charge, à l’arrêt
+                      <strong>Indicateurs fonctionnels</strong> : consommation à vide, en charge, à l&apos;arrêt
                     </li>
                     <li>
                       <strong>Modèles multifactoriels</strong> : intégrant plusieurs variables explicatives
                     </li>
                     <li>
-                      <strong>Analyse d’efficacité énergétique</strong> réelle (rendement, déperditions, dérives)
+                      <strong>Analyse d&apos;efficacité énergétique</strong> réelle (rendement, déperditions, dérives)
                     </li>
                   </ul>
                 </div>
                 <div>
                   <p>
-                    Prise en compte des exigences de la fiche CEE IND-UT-134, pour permettre une éventuelle valorisation
-                    financière des actions mises en place :
+                    Prise en compte des exigences de la fiche{' '}
+                    <Link
+                      href="https://atee.fr/system/files/2022-07/IND-UT-134%20v%20A35-2%20%EF%BF%BD%20compter%20du%2001-10-2020.pdf"
+                      target="_blank"
+                    >
+                      CEE IND-UT-134
+                    </Link>
+                    , pour permettre une éventuelle valorisation financière des actions mises en place :
                   </p>
                   <ul>
                     <li>Indicateurs suivis dans le temps</li>
                     <li>Suivi régulier</li>
                     <li>Périmètre clairement défini</li>
-                    <li>Plan d’actions associé</li>
+                    <li>Plan d&apos;actions associé</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className={clsx(commonStyles.labelAndBloc, commonStyles.reverse)}>
+            <div className={clsx(commonStyles.labelAndBloc)}>
               <div className={commonStyles.center}>
                 <Icon type="wall" size={120} />
               </div>
               <div>
-                <label className={commonStyles.underline}>ÉTAPE 3 : Mise en œuvre & plan d’actions</label>
-                <p>Élaboration d’une feuille de route opérationnelle :</p>
+                <label className={commonStyles.underline}>ÉTAPE 3 : Mise en œuvre & plan d&apos;actions</label>
+                <p>Élaboration d&apos;une feuille de route opérationnelle :</p>
                 <ul>
                   <li>Structuration du suivi (outils simples ou intégrés)</li>
                   <li>Définition des fréquences, des responsabilités, des routines de pilotage</li>
@@ -151,7 +165,7 @@ export default function DevelopperAmeliorationContinue() {
               <div className={commonStyles.center}>
                 <Image src={ipe} alt="" width={400} />
               </div>
-              <div>
+              <div className={commonStyles.center}>
                 <p>
                   Vision pragmatique et opérationnelle, adaptée aux réalités du terrain. Capacité à faire parler les
                   données sans complexifier les outils.
@@ -168,7 +182,6 @@ export default function DevelopperAmeliorationContinue() {
             </div>
           </div>
         </Collapse>
-        <DevelopementEnergiesRenouvelables />
       </div>
     </section>
   );

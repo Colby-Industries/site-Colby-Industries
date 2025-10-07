@@ -8,6 +8,10 @@
   gap: calc(var(--spacing-9) * 2);
 }
 
+.center {
+  text-align: center;
+}
+
 .topContainer {
   display: flex;
   flex-direction: column;

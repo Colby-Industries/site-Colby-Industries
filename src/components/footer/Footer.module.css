@@ -44,7 +44,7 @@
   gap: var(--spacing-2);
 }
 
-.link {
+.link, .link:visited {
   color: var(--colors-negative);
   font-size: 0.8rem;
   text-decoration: none;

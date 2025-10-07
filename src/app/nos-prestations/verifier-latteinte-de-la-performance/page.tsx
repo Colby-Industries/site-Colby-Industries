@@ -9,6 +9,8 @@ import Image from 'next/image';
 import commissioning from '@/assets/nos-prestations/commissioning.png';
 import analyseApprofondie from '@/assets/nos-prestations/analyse-approfondie.png';
 import { clsx } from 'clsx';
+import Link from 'next/link';
+import { ROUTE_PRESTATIONS_IDENTIFIER_PROJETS } from '@/constants/routes';
 
 export const metadata: Metadata = {
   title: "Vérifier l'atteinte de la performance énergétique",
@@ -67,8 +69,17 @@ export default function VerifierLatteinteDeLaPerformance() {
             />
             <div>
               <p>
-                Le <strong>protocole IPMVP (International Performance Measurement and Verification Protocol</strong> –
-                Evo World) est aujourd&apos;hui la référence pour mesurer et vérifier les économies d&apos;énergie
+                Le{' '}
+                <strong>
+                  <Link
+                    href="https://atee.fr/system/files/2024-03/Protocole%20IPMVP%20_%20Avril%202017.pdf"
+                    target="_blank"
+                  >
+                    protocole IPMVP
+                  </Link>{' '}
+                  (International Performance Measurement and Verification Protocol
+                </strong>{' '}
+                – Evo World) est aujourd&apos;hui la référence pour mesurer et vérifier les économies d&apos;énergie
                 réalisées après un projet d&apos;efficacité énergétique. Dans l&apos;industrie, son application permet
                 de comparer objectivement la situation réelle post-travaux à une situation de référence, en neutralisant
                 les effets de contexte (production, météo…). Cette rigueur méthodologique est essentielle pour garantir
@@ -129,7 +140,12 @@ export default function VerifierLatteinteDeLaPerformance() {
                 </strong>
                 .
               </p>
-              <p>Ces analyses font échos aux accompagnements que nous proposons sur les analyses fonctionnelles ici.</p>
+              <p>
+                Ces analyses font échos aux{' '}
+                <Link href={ROUTE_PRESTATIONS_IDENTIFIER_PROJETS}>
+                  accompagnements que nous proposons sur les analyses fonctionnelles.
+                </Link>
+              </p>
             </div>
           </div>
         </Collapse>

@@ -14,8 +14,8 @@ export default function Contact() {
       <h1>Envie d&apos;en savoir plus ?</h1>
       <div className={styles.content}>
         <p>
-          Prenez contact avec l&apos;agence la plus proche de chez vous ou complétez le formulaire en nous indiquant
-          votre projet et vos attentes, nous reviendrons vers vous rapidement.
+          Prenez contact avec l&apos;agence la plus proche de chez vous en nous indiquant votre projet et vos attentes,
+          nous reviendrons vers vous rapidement.
         </p>
         <div className={styles.twoColumns}>
           <div>

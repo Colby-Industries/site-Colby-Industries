@@ -1,6 +1,8 @@
 import styles from './DevelopementEnergiesRenouvelables.module.css';
 import Collapse from '@/components/collapse/Collapse';
 import { Steps } from '@/components/steps/Steps';
+import commonStyles from '@/app/nos-prestations/common.module.css';
+import Link from 'next/link';
 
 export const DevelopementEnergiesRenouvelables: React.FC = () => {
   return (
@@ -27,19 +29,19 @@ export const DevelopementEnergiesRenouvelables: React.FC = () => {
           <div className={styles.splitColumn}>
             <div>
               <label className={styles.underline}>
-                Loi LOM – Anticiper l’électrification de vos mobilités industrielles
+                Loi LOM – Anticiper l&apos;électrification de vos mobilités industrielles
               </label>
               <label>Qui est concerné ?</label>
               <p>
-                Sites industriels disposant d’un parking ≥ 20 places
+                Sites industriels disposant d&apos;un parking ≥ 20 places
                 <br />
-                Flottes d’entreprise incluant des véhicules légers
+                Flottes d&apos;entreprise incluant des véhicules légers
                 <br />
                 Bâtiments industriels neufs ou lourdement rénovés.
               </p>
               <label>Ce qui est demandé</label>
               <p>
-                Installation ou pré-équipement d’IRVE (bornes de recharge électrique) sur les parkings salariés ou
+                Installation ou pré-équipement d&apos;IRVE (bornes de recharge électrique) sur les parkings salariés ou
                 visiteurs : 5 % à 10 % des places équipées selon la configuration
                 <br />
                 Précâblage obligatoire pour faciliter les extensions futures
@@ -58,19 +60,19 @@ export const DevelopementEnergiesRenouvelables: React.FC = () => {
               <p>
                 Sites industriels avec grandes toitures, parkings extérieurs ≥ 1 500 m², ou terrains disponibles
                 <br />
-                Acteurs implantés dans des zones d’accélération ENR définies par les collectivités.
+                Acteurs implantés dans des zones d&apos;accélération ENR définies par les collectivités.
               </p>
               <label>Ce qui est demandé</label>
               <p>
                 Obligation de couverture solaire :
                 <br />
-                Toitures : obligation pour les bâtiments neufs ou rénovés à partir d’un certain seuil de surface
+                Toitures : obligation pour les bâtiments neufs ou rénovés à partir d&apos;un certain seuil de surface
                 <br />
                 Parkings extérieurs ≥ 1 500 m² : obligation de couverture solaire à hauteur de 50 %
                 <br />
                 Incitation à développer des projets photovoltaïques ou thermiques en autoconsommation ou injection
                 <br />
-                Facilitation des procédures en zones d’accélération : gain de temps sur les autorisations
+                Facilitation des procédures en zones d&apos;accélération : gain de temps sur les autorisations
               </p>
             </div>
           </div>
@@ -109,6 +111,25 @@ export const DevelopementEnergiesRenouvelables: React.FC = () => {
             réalisation des études détaillées ainsi que la mise en place des projets, nous faisons appel à notre réseau
             de partenaires experts sur ces thématiques spécifiques.
           </p>
+        </div>
+        <div className={commonStyles.labelAndBloc}>
+          <label>Liens utiles</label>
+          <div>
+            <p>
+              Le site du{' '}
+              <Link href="https://www.ecologie.gouv.fr/loi-dorientation-des-mobilites" target="_blank">
+                ministère de l&apos;écologie
+              </Link>{' '}
+              permet de vous éclairer sur la thématique de la LOM.{' '}
+            </p>
+            <p>
+              Le site{' '}
+              <Link href="https://entreprendre.service-public.fr/vosdroits/F38187" target="_blank">
+                entreprendre
+              </Link>{' '}
+              du gouvernement permet d&apos;estimer au mieux ses enjeux concernant la loi APER.
+            </p>
+          </div>
         </div>
       </div>
     </Collapse>

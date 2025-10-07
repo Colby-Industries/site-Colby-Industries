@@ -7,11 +7,16 @@
   font-weight: 600;
   transition: all 200s ease;
   cursor: pointer;
+  color: var(--colors-secondary);
+}
+
+.linkButton:hover,
+.linkButton:visited {
+  color: var(--colors-secondary);
 }
 
 .linkButtonPrimary {
   background-color: var(--colors-primary);
-  color: var(--colors-secondary);
   border: 2px solid var(--colors-primary);
 }
 
@@ -28,7 +33,6 @@
 
 .linkButtonSecondary:hover {
   background-color: var(--colors-primary);
-  color: var(--colors-secondary);
 }
 
 .linkButtonSmall {

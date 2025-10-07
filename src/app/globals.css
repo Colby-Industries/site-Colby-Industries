@@ -42,6 +42,14 @@ body {
   box-sizing: border-box;
 }
 
+a, a:visited {
+  color: var(--colors-primary-soft);
+}
+
+a:hover {
+  color: var(--colors-primary-xsoft);
+}
+
 h1,
 h2,
 h3,

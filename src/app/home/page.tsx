@@ -30,11 +30,11 @@ export default function Home() {
           <p>
             Colby Industries est un cabinet de conseil spécialisé en performance énergétique industrielle. Nous
             accompagnons les industries dans la structuration de leur démarche énergie, de l&apos;identification
-            jusqu&apos;à la mise en œuvre des projets d&apos;efficacité énergétiques et de décarbonation.
+            jusqu&apos;à la mise en œuvre des projets d&apos;efficacité énergétique et de décarbonation.
           </p>
           <p>
             Notre approche, guidée par l&apos;exploitation de la donnée et ancrée dans l&apos;analyse terrain, nous
-            permet d&apos;être pragmatiques, sur-mesures et alignés avec les réalités industrielles.
+            permet d&apos;être pragmatiques, sur-mesure et alignés avec les réalités industrielles.
           </p>
         </div>
         <div className={styles.reverseBackground}>
@@ -67,7 +67,7 @@ export default function Home() {
               <label>Équilibre</label>
               <span>
                 La mise à disposition d&apos;une ressource experte sans les coûts internes d&apos;une grosse structure.
-                Une relation gagnante - gagnante !
+                Une relation gagnant - gagnant !
               </span>
             </div>
             <div>

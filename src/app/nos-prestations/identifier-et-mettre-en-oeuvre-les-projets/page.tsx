@@ -1,4 +1,5 @@
 import commonStyles from '../common.module.css';
+import styles from './styles.module.css';
 import { createBreadcrumbJsonLd } from '@/lib/structured-data';
 import type { Metadata } from 'next';
 import Claim from '@/components/claim/Claim';
@@ -8,6 +9,8 @@ import etude from '@/assets/nos-prestations/etude.png';
 import analyse from '@/assets/nos-prestations/analyse.png';
 import assistance from '@/assets/nos-prestations/assistance.png';
 import { clsx } from 'clsx';
+import Link from 'next/link';
+import { ROUTE_ENTREPRISE_QUALIFICATIONS } from '@/constants/routes';
 
 export const metadata: Metadata = {
   title: 'Identifier et mettre en œuvre les projets',
@@ -60,28 +63,48 @@ export default function IdentifierMettreEnOeuvreLesProjets() {
             <div>
               <p>
                 En fonction de la maturité de vos plans d&apos;action nous pouvons vous accompagner de l&apos;audit
-                général jusqu&apos;aux études d&apos;avant projets. Colby Industries est qualifié par l&apos;AFNOR NF EN
-                16247-1 et NF EN 16247-3, cette distinction permet à une partie de nos études d&apos;être financée en
-                partie par l&apos;ADEME entre 30 et 80% en fonction de la taille de votre entreprise.
+                général jusqu&apos;aux études d&apos;avant projets. Colby Industries est{' '}
+                <Link href={ROUTE_ENTREPRISE_QUALIFICATIONS}>qualifié</Link> par l&apos;AFNOR NF EN 16247-1 et NF EN
+                16247-3, cette distinction permet à une partie de nos études d&apos;être{' '}
+                <strong>financée partiellement par l&apos;ADEME</strong> entre 30 et 80% en fonction de la taille de
+                votre entreprise.
               </p>
               <p>
-                Quelques exemples ci dessous d&apos;études subventionnées. La liste complète est disponible ici sur le
-                site de l&apos;ADEME.
+                Quelques exemples ci dessous d&apos;études subventionnées. La liste complète est disponible sur le site
+                de{' '}
+                <Link href="https://agir.ademe.fr/" target="_blank">
+                  l&apos;ADEME.
+                </Link>
               </p>
-              <span>
+              <span className={styles.studies}>
                 <p>
-                  Études de faisabilité de performance énergétique ou de décarbonation d&apos;entreprises industrielles.
+                  <Link
+                    href="https://agir.ademe.fr/aides-financieres/2025/etudes-de-faisabilite-de-performance-energetique-ou-de-decarbonation"
+                    target="_blank"
+                  >
+                    Études de faisabilité de performance énergétique ou de décarbonation d&apos;entreprises
+                    industrielles.
+                  </Link>
                 </p>
-                <p>Études de faisabilité pour l&apos;installation de récupération de chaleur fatale.</p>
+                <p>
+                  <Link
+                    href="https://agir.ademe.fr/aides-financieres/2025/etudes-de-faisabilite-pour-linstallation-de-recuperation-de-chaleur-fatale"
+                    target="_blank"
+                  >
+                    Études de faisabilité pour l&apos;installation de récupération de chaleur fatale.
+                  </Link>
+                </p>
               </span>
               <p>
-                A la suite de cette première phase d&apos;étude visant à valider la viabilité technico-financière du
-                projet nous vous accompagnons dans les études approfondies jusqu&apos;à la mise en œuvre du projet.
+                A la suite de cette première phase d&apos;étude visant à valider la{' '}
+                <strong>viabilité technico-financière</strong> du projet nous vous accompagnons dans les études
+                approfondies jusqu&apos;à la mise en œuvre.
               </p>
               <p>
-                Le périmètre des études menées peut être aussi bien au niveau des utilités que du process, notre
-                approche data-driven nous permet de comprendre finement les enjeux énergétiques de vos installations et
-                ainsi intervenir sur l&apos;ensemble de votre usine.
+                Le périmètre des études menées peut être aussi bien{' '}
+                <strong>au niveau des utilités que du process</strong>, notre approche data-driven nous permet de
+                comprendre finement les enjeux énergétiques de vos installations et ainsi d&apos;intervenir sur
+                l&apos;ensemble de votre usine.
               </p>
             </div>
           </div>
@@ -105,14 +128,15 @@ export default function IdentifierMettreEnOeuvreLesProjets() {
                 Les nouveaux projets d&apos;efficacité énergétique présentent une complexité grandissante: récupération
                 de chaleur, appoint en électrification, stockage thermique, flexibilité liée aux conditions tarifaires
                 du marché de l&apos;énergie, engagement d&apos;enlèvement de chaleur, équilibrage des systèmes, quotas
-                carbone… La liste peut être longue ! L&apos;automatisme prend et doit prendre une place prépondérante
-                dans la gestion de ces systèmes. La meilleure des technologies n&apos;atteindra les performances
-                escomptées que si le pilotage est au niveau.
+                carbone… La liste peut être longue !{' '}
+                <strong>L&apos;automatisme prend et doit prendre une place prépondérante</strong> dans la gestion de ces
+                systèmes. La meilleure des technologies n&apos;atteindra les performances escomptées que si le pilotage
+                est au niveau.
               </p>
               <p>
                 Chez Colby Industries, nous vous accompagnons dans la rédaction des Analyses Fonctionnelles sur la
-                brique performance énergétique afin de s&apos;assurer que le pilote de votre installation sera à la
-                hauteur de la performance de vos équipements.
+                brique performance énergétique afin de s&apos;assurer que{' '}
+                <strong>le pilote de votre installation sera à la hauteur de la performance de vos équipements</strong>.
               </p>
             </div>
           </div>
@@ -132,19 +156,27 @@ export default function IdentifierMettreEnOeuvreLesProjets() {
               alt="Assistance maitrise d'ouvrage performance énergétique"
             />
             <div>
+              <div>
+                <p>
+                  En phase de travaux, nous sommes en mesure de vous accompagner dans le rôle d&apos;assistance à
+                  maitrise d&apos;ouvrage. Ayant été impliqués sur l&apos;ensemble de la phase amont, nous nous assurons
+                  de <strong>la bonne continuité des travaux par rapport aux études menées</strong>. Les aléas et
+                  modifications en cours de chantier sont qualifiées et quantifiées afin d&apos;évaluer par exemple :
+                </p>
+                <ul>
+                  <li>Les potentielles dégradations de performance par rapport aux enjeux initiaux</li>
+                  <li>
+                    L&apos;impact financier de ces évolutions (OPEX, Aides CEE, Taux de couverture, Engagements ADEME…).
+                  </li>
+                </ul>
+              </div>
+
               <p>
-                En phase de travaux, nous sommes en mesure de vous accompagner dans le rôle d&apos;assistance à maitrise
-                d&apos;ouvrage. Ayant été impliqué sur l&apos;ensemble de la phase amont, nous nous assurons de la bonne
-                continuité des travaux par rapport aux études menées. Les aléas et modifications en cours de chantier
-                sont qualifiées et quantifiées afin d&apos;évaluer par exemple : Les potentielles dégradations de
-                performance par rapport aux enjeux initiaux L&apos;impact financier de ces évolutions (OPEX, Aides CEE,
-                Taux de couverture, Engagements ADEME…).
-              </p>
-              <p>
-                Nous intervenons en support du maître d&apos;ouvrage, ainsi le dimensionnement de cet accompagnement est
-                réalisé sur mesure en fonction de vos besoins. La bonne définition de notre accompagnement vous permet
-                de bénéficier au besoin d&apos;une ressource experte pour vous aider à conduire vos travaux en cas de
-                ressources internes limitées.
+                Nous intervenons en support du maître d&apos;ouvrage, ainsi le dimensionnement de cet{' '}
+                <strong>accompagnement est réalisé sur mesure en fonction de vos besoins</strong>. La bonne définition
+                de notre accompagnement vous permet de bénéficier au besoin d&apos;une{' '}
+                <strong>ressource experte</strong> pour vous aider à conduire vos travaux en cas de ressources internes
+                limitées.
               </p>
             </div>
           </div>

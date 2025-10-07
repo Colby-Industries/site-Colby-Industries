@@ -3,6 +3,7 @@ import styles from './ISO50001.module.css';
 import { Methodology } from '@/components/methodology/Methodology';
 import Image from 'next/image';
 import accompagnement from '@/assets/nos-prestations/accompagnement.png';
+import Link from 'next/link';
 
 export const ISO50001: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ export const ISO50001: React.FC = () => {
           </p>
         </div>
         <div>
-          <label>Qu&apos;est-ce qu&apos;un Système de Management de l’Énergie ?</label>
+          <label>Qu&apos;est-ce qu&apos;un Système de Management de l&apos;Énergie ?</label>
           <p>
             Un Système de Management de l&apos;Énergie (SMÉ) intègre la gestion active de l&apos;énergie dans les
             procédures et les systèmes opérationnels au quotidien. Cela permet aux organismes de mieux gérer leur
@@ -85,6 +86,19 @@ export const ISO50001: React.FC = () => {
                 23,6 GWh, nouvelle obligation de mise en place d&apos;un système de management de l&apos;Énergie
               </strong>{' '}
               avant le 11 octobre 2027.
+              <br />
+              <br />
+              Le texte mentionnant cette réglementation est l&apos;article 25 de la LOI n° 2025-391 du 30 avril 2025 que
+              l&apos;on peut retrouver{' '}
+              <Link href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051538879" target="_blank">
+                ici
+              </Link>
+              . On notera la mention :{' '}
+              <i>
+                « 1° Mettre en œuvre un système de management de l&apos;énergie lorsque leur consommation annuelle
+                moyenne d&apos;énergie finale est supérieure ou égale à 23,6 gigawattheures »
+              </i>
+              .
             </p>
           </div>
         </div>
@@ -97,7 +111,12 @@ export const ISO50001: React.FC = () => {
             <strong>versement d&apos;une prime égale à 20% des dépenses énergétiques annuelles (HT)</strong> des sites
             certifiés. L&apos;aide est plafonnée à 40 000 € HT.
             <br />
-            Ce programme est ouvert jusqu&apos;au 31 décembre 2025.
+            Ce programme est actuellement ouvert jusqu&apos;au 31 décembre 2027, plus d&apos;informations sont
+            directement disponibles sur le site suivant :{' '}
+            <Link href="https://pro-smen.org/" target="_blank">
+              Aide Pro-Smen
+            </Link>
+            .
           </p>
         </div>
       </div>

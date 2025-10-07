@@ -6,6 +6,14 @@ import monitoring from '@/assets/notre-approche/monitoring.png';
 import restitution from '@/assets/notre-approche/restitution.png';
 import ISO50001 from '@/assets/notre-approche/ISO50001.png';
 import { Steps } from '@/components/steps/Steps';
+import Icon from '@/components/icon/Icon';
+import Link from 'next/link';
+import {
+  ROUTE_CONTACT,
+  ROUTE_PRESTATIONS_AMELIORATION_CONTINUE,
+  ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE,
+  ROUTE_PRESTATIONS_IDENTIFIER_PROJETS,
+} from '@/constants/routes';
 
 export const metadata: Metadata = {
   title: 'Management de la donnée',
@@ -29,7 +37,55 @@ export default function ManagementDeLaDonnee() {
           ]),
         }}
       />
-      <h1>Management de la donnée</h1>
+      <section className={styles.topContainer}>
+        <h1>Management de la donnée</h1>
+        <div>
+          <Icon type="energy-mgmnt" size={180} />
+        </div>
+        <div>
+          <p>
+            <label>Notre définition</label>
+          </p>
+          <p>
+            Le <strong>management de la donnée énergétique</strong>, c&apos;est l&apos;art de{' '}
+            <strong>sélectionner les données essentielles</strong>, de les <strong>faire converger</strong> grâce aux
+            bons outils, puis de les <strong>exploiter efficacement</strong> pour servir vos projets.
+          </p>
+          <p>
+            Chez <strong>Colby Industries</strong>, nous sommes convaincus que <strong>la donnée est le socle</strong>{' '}
+            d&apos;une stratégie énergétique performante et pragmatique.
+          </p>
+          <div>
+            <p>
+              <label>Pourquoi c&apos;est essentiel</label>
+            </p>
+            <p>
+              L&apos;écosystème énergétique industriel est complexe. Entre{' '}
+              <strong>consommations, facteurs influents et données de production</strong>, une gestion performante de la
+              data permet de :
+            </p>
+            <ul>
+              <li>
+                Obtenir une <strong>vision claire et fiable</strong> des usages.
+              </li>
+              <li>
+                Appuyer vos décisions sur des <strong>données réelles</strong> plutôt que sur des estimations.
+              </li>
+              <li>
+                <strong>Prioriser les actions</strong> à fort impact énergétique et carbone.
+              </li>
+            </ul>
+          </div>
+          <p>
+            <label>Notre approche</label>
+          </p>
+          <p>
+            Elle <strong>s&apos;adapte à vos projets</strong> et vos besoins, ci-dessous quelques typologies
+            d&apos;accompagnement réalisés.
+          </p>
+        </div>
+      </section>
+
       <section>
         <h2>Définition de la stratégie de monitoring</h2>
         <div>
@@ -42,16 +98,22 @@ export default function ManagementDeLaDonnee() {
             retranscrire au travers des différents éléments techniques : définition du <strong>plan de comptage</strong>{' '}
             adapté (énergétique, contextuel, données de production) pour finalement les partager au travers des{' '}
             <strong>cahier des charges techniques</strong> (matériel, soft...).
-            <br />
+          </p>
+          <p>
             <strong>ACCOMPAGNER</strong> : Nous assurons ensuite la mise en place du projet pour un{' '}
             <strong>gain de temps</strong> pour vos ressources internes associé à notre{' '}
             <strong>connaissance pointue des acteurs</strong>. Résultat, consultation et co-sélection des entreprises,
             suivi des travaux en assistance à maîtrise d&apos;ouvrage et réception des installations conforme aux
             exigences du CCTP.
-            <br />
-            <strong>EXPLOITER</strong> : Enfin, nous vous accompagnons à la valorisation les résultats grâce au montage
-            de dossiers CEE <strong>IND-UT-134</strong>, à l&apos;exploitation des données de comptage et au pilotage
-            continu de la performance énergétique avec un <strong>Energy Manager</strong>.
+          </p>
+          <p>
+            <strong>EXPLOITER</strong> : Enfin, nous vous accompagnons à la valorisation des résultats grâce au montage
+            des dossiers CEE, à l&apos;exploitation des données de comptage et au pilotage continu de la performance
+            énergétique avec un{' '}
+            <Link href={ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE}>
+              <strong>Energy Manager</strong>
+            </Link>
+            .
           </p>
           <p>
             Un accompagnement complet et adapté au besoin, du cadrage initial à l&apos;exploitation des données, pour
@@ -77,21 +139,26 @@ export default function ManagementDeLaDonnee() {
         </div>
       </section>
       <section>
-        <h2>Restitution d&apos;étude par via des outils de data visualisation</h2>
+        <h2>Restitution d&apos;études via des outils de data visualisation</h2>
         <div>
-          <p>Une restitution claire et exploitable de nos études grâce à des outils de data visualisation.</p>
+          <p>
+            Une restitution claire et exploitable de <Link href={ROUTE_PRESTATIONS_IDENTIFIER_PROJETS}>nos études</Link>{' '}
+            grâce à des outils de data visualisation.
+          </p>
           <p>
             <strong>MESURER</strong> : Quelles consommations mesurer ? Quels outils ? Combien de temps ? Nous savons
             vous accompagner pour mettre en avant les consommations d&apos;énergie de vos usages ou process. Avec nos
             propres solutions de comptage temporaire, nous mettons à votre disposition du comptage énergétique ou de
             contextualisation, simples et non intrusives.
-            <br />
+          </p>
+          <p>
             <strong>ANALYSER</strong> : Comment analyser cette valeur mesurée et en faire ressortir des informations
             importantes ? Nous comparons, croisons et corrigeons les données afin d&apos;identifier avec précision les
             axes d&apos;amélioration. Cette étape d&apos;analyse se veut dynamique, des sessions de travail avec les
             équipes internes sont organisées afin de comprendre ensemble les comportements observés et coconstruire les
             solutions envisagées.
-            <br />
+          </p>
+          <p>
             <strong>IDENTIFIER</strong> L&apos;analyse détaillée est présentée via des outils de data visualisation,
             facilitant la compréhension et l&apos;appropriation. Graphique semaine type, analyse de puissance 10 min,
             cartographie énergétique de l&apos;usage et autres indicateurs autant d&apos;éléments permettant de
@@ -122,11 +189,12 @@ export default function ManagementDeLaDonnee() {
         </div>
       </section>
       <section>
-        <h2>Co-construction de tableaux de bords ISO 50001 pour suivi d&apos;IPE</h2>
+        <h2>Co-construction de tableaux de bord ISO 50001 pour suivi d&apos;IPE</h2>
         <div>
           <p>
-            Nous accompagnons vous accompagnons dans la co-construction de tableaux de bord conformes à l&apos;ISO 50001
-            pour le suivi de leurs indicateurs.
+            Nous vous accompagnons dans la co-construction de tableaux de bord conformes à{' '}
+            <Link href={ROUTE_PRESTATIONS_AMELIORATION_CONTINUE}>l&apos;ISO 50001</Link> pour le suivi de leurs
+            indicateurs.
           </p>
           <p>
             <strong>STRUCTURER</strong> : Quels sont les indicateurs en place ? A qui sont-ils destinés ? D&apos;où
@@ -134,11 +202,13 @@ export default function ManagementDeLaDonnee() {
             compréhension des besoins en indicateurs, du choix des supports et visuels pour qu&apos;ils soient adaptés à
             leurs utilisations finales. Nous coconstruisons ensuite lors d&apos;ateliers avec les parties intéressées la
             mise en forme des IPE en fonction de la complexité de l&apos;organisation et de leurs finalités.
-            <br />
+          </p>
+          <p>
             <strong>EVALUER</strong> : Dérive ou juste un évènement prévu impactant la consommation ? Cette étape
-            d&apos;évaluation de la performance énergétique se tient conjointe avec les équipes concernées. Nous vous
-            aidons à mettre en avant l&apos;impact du fonctionnement de votre site à travers les indicateurs.
-            <br />
+            d&apos;évaluation de la performance énergétique se tient conjointement avec les équipes concernées. Nous
+            vous aidons à mettre en avant l&apos;impact du fonctionnement de votre site à travers les indicateurs.
+          </p>
+          <p>
             <strong>COMMUNIQUER</strong> : Choisir la bonne périodicité de communication, les bons canaux de diffusion
             afin que les tableaux de bords assurent la diffusion des résultats, la remontée d&apos;informations auprès
             de la direction et la sensibilisation des équipes.
@@ -166,6 +236,63 @@ export default function ManagementDeLaDonnee() {
           />
         </div>
       </section>
+      <section>
+        <h2>Accompagnement à la sélection ou à la conception d&apos;une solution EMS</h2>
+        <div>
+          <p>
+            Nous vous encourageons à vous équiper d&apos;un véritable outil d&apos;Energy Management plutôt que
+            d&apos;alimenter manuellement un Excel ou un outil de Data visualisation. Développer sa solution en interne
+            pour limiter le nombre d&apos;outils ou faire appel à des sociétés expertes dans la digitalisation de ces
+            données? Dans tous les cas notre accompagnement vous sera bénéfique.
+          </p>
+          <p>
+            <strong>SELECTIONNER</strong> : Les acteurs sur le marché sont nombreux et chaque prestataire présentent ses
+            plus values et ses limites. Si le prestataire n°1 conviendra parfaitement à un client pour des raisons de
+            simplicité d&apos;usage, de prix et de connectivité il pourra se retrouver insuffisant pour un autre client
+            plus mature souhaitant un nombre important de fonctionnalités complémentaires (interfaçage ERP,
+            accessibilité…). Nous avons rencontré la majeure partie des logiciels EMS reconnus et connaissons leurs
+            atouts et leurs faiblesses, nous vous accompagnerons dans la sélection du bon partenaire, adapté à votre
+            maturité actuelle et grandissante. Dans le cas où vous souhaitez vous lancer en interne c&apos;est également
+            possible, nos prestations de{' '}
+            <Link href={ROUTE_PRESTATIONS_COORDONNER_ENERGIE_DIGITAL_PERFORMANCE}>Product Owner</Link> ont déjà fait
+            leurs preuves ! Pourquoi pas vous?
+          </p>
+          <p>
+            <strong>ORGANISER</strong> : Une fois le besoin défini, nous vous proposons de rencontrer les acteurs du
+            marché, présélectionnés par nos soins en fonction de vos enjeux. Après les différentes démos animées par les
+            prestataires nous débriefons ensemble des avantages et inconvénients de chacun. Vous pouvez ensuite retenir
+            avec un œil avisé le partenaire avec lequel vous avancerez. La définition du cahier des charges software
+            vous assurera que vos différents besoins seront couverts par la solution déployée.
+          </p>
+          <p>
+            <strong>ANIMER</strong> : En fonction des ressources que vous avez à disposition et de votre maturité sur le
+            sujet nous sommes en mesure de vous accompagner dans la mise en œuvre et l&apos;animation de ce projet.
+          </p>
+          <p>
+            Le bon outil d&apos;Energy Management doit être adapté à votre stratégie d&apos;entreprise, uniforme avec
+            vos méthodes et en phase avec vos enjeux actuels et vos ambitions.
+          </p>
+        </div>
+        <div>
+          <Steps
+            compact
+            steps={[
+              {
+                title: 'Sélectionner',
+              },
+              {
+                title: 'Organiser',
+              },
+              {
+                title: 'Animer',
+              },
+            ]}
+          />
+        </div>
+      </section>
+      <p className={styles.contact}>
+        La prochaine histoire s&apos;écrit avec vous ? <Link href={ROUTE_CONTACT}>Nous contacter</Link>.
+      </p>
     </div>
   );
 }

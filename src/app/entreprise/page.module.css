@@ -68,6 +68,10 @@
           }
         }
 
+        > span {
+          font-style: italic;
+        }
+
         h3, img {
           display: inline-block;
         }

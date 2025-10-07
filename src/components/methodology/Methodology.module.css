@@ -185,6 +185,13 @@
   }
 }
 
+@media screen and (max-width: 400px){
+  .outer {
+    position: initial;
+    margin-top: var(--spacing-4);
+  }
+}
+
 @media screen and (max-width: 420px) {
   .wrapper {
     padding: var(--spacing-3) 0 calc(var(--spacing-6) * 2);

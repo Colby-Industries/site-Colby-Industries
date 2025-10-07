@@ -1,0 +1,10 @@
+@media screen and (min-width: 992px){
+  .studies {
+    display: flex;
+    gap: var(--spacing-9);
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--spacing-9);
+    text-align: center;
+  }
+}

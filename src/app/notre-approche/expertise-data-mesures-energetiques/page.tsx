@@ -95,7 +95,7 @@ export default function ExpertiseDataMesuresEnergetiques() {
               un nombre notable d&apos;équipements de comptage vous permettant alors d&apos;évaluer la coactivité de vos
               installations.
             </p>
-            <p>
+            <p className={styles.center}>
               <strong>Le profil de puissance est beaucoup explicite que la simple consommation d&apos;énergie.</strong>
             </p>
           </div>
@@ -131,7 +131,7 @@ export default function ExpertiseDataMesuresEnergetiques() {
               régulations, vérifier le bon fonctionnement des PID, estimer les enjeux énergétiques d&apos;un fluide
               (vapeur, air comprimé...).
             </p>
-            <p>
+            <p className={styles.center}>
               <strong>La donnée est disponible il ne reste plus qu&apos;à savoir l&apos;exploiter.</strong>
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function ExpertiseDataMesuresEnergetiques() {
               entre deux ordres de fabrications…
             </p>
             <p>
-              Tous ces KPI permettent l&apos;identification d&apos;actions facile à déployer et à ROI rapides. Des
+              Tous ces KPI permettent l&apos;identification d&apos;actions faciles à déployer et à ROI rapides. Des
               compteurs non intrusifs peuvent être déployés pour intégrer des informations de cadence de production ou
               des activités spécifiques sur vos lignes de productions. En fonction de l&apos;impact du mix de production
               sur une même ligne, il est également possible de compléter les analyses avec un export de la base de

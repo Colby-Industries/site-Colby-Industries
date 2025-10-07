@@ -9,6 +9,8 @@ import energyManager from '@/assets/nos-prestations/energy-manager.png';
 import productOwner from '@/assets/nos-prestations/product-owner.png';
 import animateur from '@/assets/nos-prestations/animateur.png';
 import { clsx } from 'clsx';
+import Link from 'next/link';
+import { ROUTE_PRESTATIONS_AMELIORATION_CONTINUE } from '@/constants/routes';
 
 export const metadata: Metadata = {
   title: 'Coordonner énergie, digital et performance',
@@ -96,6 +98,10 @@ export default function CoordonnerEnergieDigitalPerformancePage() {
                   </li>
                 </ul>
               </div>
+              <p>
+                Ce rôle est complémentaire avec notre{' '}
+                <Link href={ROUTE_PRESTATIONS_AMELIORATION_CONTINUE}>accompagnement ISO 50001</Link>.
+              </p>
             </div>
           </div>
         </Collapse>
@@ -131,7 +137,7 @@ export default function CoordonnerEnergieDigitalPerformancePage() {
         </Collapse>
         <Collapse
           title="Animateur Performance Énergétique"
-          subtitle="Former et sensibiliser les professionnels & scolaires aux enjeux de l’énergie dans l’industrie"
+          subtitle="Former et sensibiliser les professionnels & scolaires aux enjeux de l'énergie dans l'industrie"
           defaultOpen={false}
           titleTag="h2"
         >
