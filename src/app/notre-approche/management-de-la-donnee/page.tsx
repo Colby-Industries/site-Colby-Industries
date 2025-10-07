@@ -35,7 +35,7 @@ export default function ManagementDeLaDonnee() {
         <div>
           <p>Un accompagnement de la conception à l&apos;exploitation.</p>
           <p>
-            <strong>Concevoir</strong> : Tout commence par l&apos;expression du besoin afin de comprendre vos enjeux.
+            <strong>CONCEVOIR</strong> : Tout commence par l&apos;expression du besoin afin de comprendre vos enjeux.
             Quelle est la finalité de votre besoin de monitoring ? Quel <strong>budget</strong> y consacrer en CAPEX
             puis OPEX ? Quelles sont les stratégies corporate d&apos;harmonisation de la démarche ? Autant de questions
             essentielles à cadrer en amont de se lancer. Une fois ces éléments appréhendés, nous pouvons alors les
@@ -43,13 +43,13 @@ export default function ManagementDeLaDonnee() {
             adapté (énergétique, contextuel, données de production) pour finalement les partager au travers des{' '}
             <strong>cahier des charges techniques</strong> (matériel, soft...).
             <br />
-            <strong>Accompagner</strong> : Nous assurons ensuite la mise en place du projet pour un{' '}
+            <strong>ACCOMPAGNER</strong> : Nous assurons ensuite la mise en place du projet pour un{' '}
             <strong>gain de temps</strong> pour vos ressources internes associé à notre{' '}
             <strong>connaissance pointue des acteurs</strong>. Résultat, consultation et co-sélection des entreprises,
             suivi des travaux en assistance à maîtrise d&apos;ouvrage et réception des installations conforme aux
             exigences du CCTP.
             <br />
-            <strong>Exploiter</strong> : Enfin, nous vous accompagnons à la valorisation les résultats grâce au montage
+            <strong>EXPLOITER</strong> : Enfin, nous vous accompagnons à la valorisation les résultats grâce au montage
             de dossiers CEE <strong>IND-UT-134</strong>, à l&apos;exploitation des données de comptage et au pilotage
             continu de la performance énergétique avec un <strong>Energy Manager</strong>.
           </p>
