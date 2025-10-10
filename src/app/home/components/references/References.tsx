@@ -16,13 +16,13 @@ const REFERENCES: ReferenceItem[] = [
     author: 'Agroalimentaire',
     company: 'Cartographie vapeur et air comprimé.',
     quote:
-      'Bien produire la vapeur et l&apos;air comprimé est une première étape. Cartographier ces fluides pour baisser leur consommation côté process a été l&apos;objectif de cette mission !',
+      "Bien produire la vapeur et l'air comprimé est une première étape. Cartographier ces fluides pour baisser leur consommation côté process a été l'objectif de cette mission !",
   },
   {
     author: 'Oil & Gas',
     company: 'ISO 50001',
     quote:
-      'Accompagnement à la mise en place de Systèmes de Management de l&apos;Énergie pour plusieurs filiales dans le monde. Contexte international et règles d&apos;un grand groupe ont été les enjeux de la mission.',
+      "Accompagnement à la mise en place de Systèmes de Management de l'Énergie pour plusieurs filiales dans le monde. Contexte international et règles d'un grand groupe ont été les enjeux de la mission.",
   },
   {
     author: 'Caoutchouc',
@@ -34,13 +34,13 @@ const REFERENCES: ReferenceItem[] = [
     author: 'Pharmaceutique',
     company: 'Energy Manager',
     quote:
-      'Renfort externe sur plusieurs années à l&apos;équipe énergie en place pour l&apos;animation et le maintien du Système de Management ISO 50001 du site R&D. Accompagnement durant les audits et les revues de management.',
+      "Renfort externe sur plusieurs années à l'équipe énergie en place pour l'animation et le maintien du Système de Management ISO 50001 du site R&D. Accompagnement durant les audits et les revues de management.",
   },
   {
     author: 'Plasturgie',
     company: 'Audit approfondi process',
     quote:
-      'Fours, presses, étuves, quels enjeux énergies et quelle performance pour chaque équipement? Un monitoring précis de l&apos;énergie consommée croisé avec le rythme de la production pour cibler toutes les phases de gaspillage énergétique.',
+      "Fours, presses, étuves, quels enjeux énergies et quelle performance pour chaque équipement? Un monitoring précis de l'énergie consommée croisé avec le rythme de la production pour cibler toutes les phases de gaspillage énergétique.",
   },
   {
     author: 'Nucléaire',
@@ -52,7 +52,7 @@ const REFERENCES: ReferenceItem[] = [
     author: 'Manufacture',
     company: 'Product Owner',
     quote:
-      'Intégration de l&apos;équipe Industrie 4.0 de l&apos;industriel pour concevoir et déployer la solution de monitoring énergétique sur les 40 usines dans le monde. Coordination des équipes développeurs et des référents énergies des sites.',
+      "Intégration de l'équipe Industrie 4.0 de l'industriel pour concevoir et déployer la solution de monitoring énergétique sur les 40 usines dans le monde. Coordination des équipes développeurs et des référents énergies des sites.",
   },
   {
     author: 'Manufacture',
@@ -64,43 +64,43 @@ const REFERENCES: ReferenceItem[] = [
     author: 'Automobile',
     company: 'CPE',
     quote:
-      'La récupération de chaleur sur process alimentant des PAC haute température pour chauffer le bâtiment l&apos;hiver permet une décarbonation de 80% du site. Un CPE de 5 ans a été mis en place pour valider les performances et garantir ce résultat!',
+      "La récupération de chaleur sur process alimentant des PAC haute température pour chauffer le bâtiment l'hiver permet une décarbonation de 80% du site. Un CPE de 5 ans a été mis en place pour valider les performances et garantir ce résultat!",
   },
   {
     author: 'Métallurgie',
     company: 'AMO Comptage',
     quote:
-      'Evaluer le besoin, maitriser les budgets, rédiger les cahiers des charges, suivre les travaux, réceptionner les installations. Par manque de ressources internes, l&apos;externalisation de la prestation de monitoring permet d&apos;avancer sur ces sujets sans perdre de temps !',
+      "Evaluer le besoin, maitriser les budgets, rédiger les cahiers des charges, suivre les travaux, réceptionner les installations. Par manque de ressources internes, l'externalisation de la prestation de monitoring permet d'avancer sur ces sujets sans perdre de temps !",
   },
   {
     author: 'Plasturgie',
     company: 'Faisabilité récupération de chaleur',
     quote:
-      'Les rejets de chaleur au niveau des groupes froid, des drys et de l&apos;air comprimé présentent un gisement thermique notable pour rénover les aérothermes gaz et décarboner le site. L&apos;intégration de la rénovation des presses dans les scénarios est primordiale pour dimensionner au mieux les installations.',
+      "Les rejets de chaleur au niveau des groupes froid, des drys et de l'air comprimé présentent un gisement thermique notable pour rénover les aérothermes gaz et décarboner le site. L'intégration de la rénovation des presses dans les scénarios est primordiale pour dimensionner au mieux les installations.",
   },
   {
     author: 'Bois',
     company: 'Plan de mesurage & CEE Spécifiques',
     quote:
-      'La récupération de chaleur sur des buées de séchoir à sciure pour la confection de granulés bois permet d&apos;importantes économies d&apos;énergie et donc l&apos;ouverture à des primes CEE spécifiques. Les études préalables approfondies permettent de fiabiliser les subventions post période de mesurage.',
+      "La récupération de chaleur sur des buées de séchoir à sciure pour la confection de granulés bois permet d'importantes économies d'énergie et donc l'ouverture à des primes CEE spécifiques. Les études préalables approfondies permettent de fiabiliser les subventions post période de mesurage.",
   },
   {
     author: 'Négociant vin',
     company: 'ISO 50001 & audit réglementaire',
     quote:
-      'Accompagnement à la mise en conformité par la mise en place de Systèmes de Management et d&apos;audit énergétique réglementaire sur plusieurs usines d&apos;embouteillage en France.',
+      "Accompagnement à la mise en conformité par la mise en place de Systèmes de Management et d'audit énergétique réglementaire sur plusieurs usines d'embouteillage en France.",
   },
   {
     author: 'Textile',
     company: 'Cartographie  & Récupération de chaleur',
     quote:
-      'Cartographier les usages afin d&apos;identifier les enjeux énergétiques et financiers du process et étude récupération de chaleur sur incinérateur et four process.',
+      "Cartographier les usages afin d'identifier les enjeux énergétiques et financiers du process et étude récupération de chaleur sur incinérateur et four process.",
   },
   {
     author: 'Pharmaceutique',
     company: 'Audit interne ISO 50001',
     quote:
-      'Principe de l&apos;amélioration continue respecté pour ce site de R&D et production par la réalisation d&apos;audit interne pluriannuel.',
+      "Principe de l'amélioration continue respecté pour ce site de R&D et production par la réalisation d'audit interne pluriannuel.",
   },
 ];
 
